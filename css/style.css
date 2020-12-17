@@ -669,9 +669,18 @@ background: rgba(0, 0, 0, 0.17);
 	display: inline-block;
 }
 /*-- //gallery --*/
-.testimonials,.team,.coaching_section {
+.testimonials {
     padding: 0 0 4em 0;
 }
+
+.team {
+	padding: 5em 0 5em 0;
+}
+
+.coaching_section {
+	padding: 5em 0 5em 0;
+}
+
 .w3l_header {
     font-size: 2.5em;
     color: #262c38;
