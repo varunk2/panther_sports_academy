@@ -460,6 +460,15 @@ nav.navbar.navbar-default {
     content: "";
     margin: 8px 0;
 }
+
+.w3ls_banner_bottom_right1 h3:after {
+    border-top: 2px solid #47cf73;
+    display: block;
+    width: 50px;
+    content: "";
+    margin: 8px 0;
+}
+
 ul.some_agile_facts li {
     list-style: none;
     margin:15px 0;
@@ -670,7 +679,7 @@ background: rgba(0, 0, 0, 0.17);
 }
 /*-- //gallery --*/
 .testimonials {
-    padding: 0 0 4em 0;
+    padding: 5em 0 5em 0;
 }
 
 .team {
@@ -712,6 +721,11 @@ h3.w3l_header.w3_agileits_header.two {
 .agile_team_grids_top {
     margin-top: 3em;
 }
+
+.mission_section, .vision_section{
+	margin-top: 7em;
+}
+
 .agileits_w3layouts_banner_bottom_grid img {
     width: 100%;
 
@@ -1322,6 +1336,9 @@ font-size: 2.5em;
 	color:#212121;
 	padding-right:1em;
 }
+.w3ls_courses_left_grid h3 span{
+	font-size: medium;
+}
 .w3ls_courses_left_grid p{
 	margin:2em 0 0;
 	color:#999;
@@ -1455,6 +1472,11 @@ p.b_label {
     line-height: 2em;
     width: 70%;
 }
+
+.choose_us{
+	padding: 0 0 5em 0;
+}
+
 .agileits_button{
 	margin:0 auto;
 	color:#fff;

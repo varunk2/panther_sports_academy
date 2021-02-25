@@ -19,18 +19,34 @@
             <div class="w3ls_banner_bottom_right1">
                 <h2>What do we do?</h2>
                 <p>
-                    Pellentesque convallis diam consequat magna vulputate malesuada. 
-                    Cras a ornare elit. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac.
+                    We specialize in discovering and developing any potential talents in cricket and football. We use the best practices in the field within a suitable training environment concentrating on mind and body.
                 </p>
                 <p>
-                    Lorem Ipsum convallis diam consequat magna vulputate malesuada. 
-                    Cras a ornare elit. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac.
+                    We want to maximize the benefit for each individual to promote importance of sports in the lives of children in order to create a healthy and fit sport society.
                 </p>
+
+                <br />
+
+                <h3>For our panthers:</h3>
                 <ul class="some_agile_facts">
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Etiam quis placerat dui.</li>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Lobortis Sem Dictum Placerat</li>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Praesent Amet Tempor Risus</li>
-                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Etiam quis placerat dui</li>
+                    <li>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        Make new friends
+                        <br>
+                        <small>Enjoy socializing in a community that feels like home.</small>
+                    </li>
+                    <li>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        Boost your enthusiasm
+                        <br>
+                        <small>Wake up in the morning to a blissful experience everyday.</small>
+                    </li>
+                    <li>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        Train your body and mind
+                        <br>
+                        <small>Maintain a healthy body, feed your soul and cultivate your mind.</small>
+                    </li>
                 </ul>
             </div>
             <div class="clearfix"> </div>
@@ -77,7 +93,7 @@
 
 <!-- gallery -->
 <div class="gallery">
-    <h3 class="w3l_header w3_agileits_header">Latest <span>Gallery</span></h3>
+    <h3 class="w3l_header w3_agileits_header"><span>Gallery</span></h3>
     <p class="sub_para_agile">Ipsum dolor sit amet consectetur adipisicing elit</p>
     <div class="agile_team_grids_top">
         <ul id="flexiselDemo1">

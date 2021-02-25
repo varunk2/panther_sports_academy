@@ -1308,6 +1308,9 @@ p {
 small,
 .small {
   font-size: 85%;
+  margin-left: 29px;
+  color: #666;
+  font-weight: lighter;
 }
 mark,
 .mark {
@@ -1471,9 +1474,9 @@ abbr[data-original-title] {
 }
 blockquote {
   padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
-  border-left: 5px solid #eee;
+  margin: 41px 0 20px;
+  font-size: 21.5px;
+  border-left: 5px solid #47cf73;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -1498,7 +1501,7 @@ blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
   text-align: right;
-  border-right: 5px solid #eee;
+  border-right: 5px solid #47cf73;
   border-left: 0;
 }
 .blockquote-reverse footer:before,
