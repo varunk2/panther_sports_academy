@@ -687,7 +687,7 @@ background: rgba(0, 0, 0, 0.17);
 }
 
 .coaching_section {
-	padding: 5em 0 5em 0;
+	padding: 5em 0 0 0;
 }
 
 .w3l_header {
@@ -739,8 +739,12 @@ background: #ececec;
     -o-box-shadow: 0 0px 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
 	    margin-bottom: 5px;
 }
-.banner-bottom,.gallery{
+.banner-bottom{
     padding: 5em 0 5em 0;
+}
+
+.gallery{
+    padding: 5em 0 0 0;
 }
 /*-- testimonials --*/
 .w3ls_testimonials_grids{
@@ -1474,7 +1478,7 @@ p.b_label {
 }
 
 .choose_us{
-	padding: 0 0 5em 0;
+	padding: 5em 0 5em 0;
 }
 
 .agileits_button{
@@ -1718,7 +1722,7 @@ p.b_label {
 /* Nariko */
 .input--nariko {
 	overflow: hidden;
-	padding-top: 2em;
+	padding-top: 1em;
 }
 
 .input__field--nariko {
@@ -1792,13 +1796,13 @@ p.b_label {
 	transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
 }
 .agileinfo_mail_grid_left textarea{
-font-size: 16px;
+	font-size: 16px;
     color: #212121;
     outline: none;
     width: 100%;
     min-height: 174px;
     resize: none;
-    margin: 3em 0;
+    margin: 2em 0;
     background: none;
     border: none;
     border-bottom: 3px solid #e3e3e3;

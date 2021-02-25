@@ -1,4 +1,6 @@
-        <!-- testimonials -->
+        <?php if(uri_string() != 'contact'): ?>
+
+		<!-- testimonials -->
         <div class="testimonials">
             <div class="container">
                 <h3 class="w3l_header w3_agileits_header">Our <span>Instructors</span></h3>
@@ -49,6 +51,8 @@
             </div>
         </div>
         <!-- //testimonials -->
+		
+		<?php endif; ?>
         
         <!-- footer -->
         <div class="footer_agile_w3ls">
