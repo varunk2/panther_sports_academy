@@ -4,9 +4,13 @@ namespace App\Controllers;
 
 use App\Models\ContactModel;
 
-class Home extends BaseController {
+class Home extends BaseController {	
+
+	public function index() {
+		return view('index');
+	}
 	
-	public function index($page = "") {
+	public function view($page){
 		return view('index', ['page' => $page]);
 	}
 	
@@ -19,6 +23,7 @@ class Home extends BaseController {
 			'email' => $this->request->getPost('email'),
 			'subject' => $this->request->getPost('subject'),
 			'message' => $this->request->getPost('message'),
+			'submit_date' => now(),
 		];
 
 		if($contactModel->saveContact($data)){

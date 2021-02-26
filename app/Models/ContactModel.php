@@ -9,8 +9,20 @@ class ContactModel extends Model {
 
     protected $allowedFields = ['name', 'phonenumber', 'email', 'subject', 'message'];
 
-    public function saveContact($data){
+    public function saveContact($data){        
         return $this->save($data);
+    }
+
+    public function getContacts(){
+        return $this->findAll();
+    }
+    
+    public function getContactByID($id){
+        return $this->find($id);
+    }
+    
+    public function deleteContactByID($id){
+        return $this->delete($id);
     }
 }
 

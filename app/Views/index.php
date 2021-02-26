@@ -1,9 +1,9 @@
 <?php
 
-$url = (empty($page)) ? 'home.php' : $page.'.php';
+$url = (empty($page)) ? 'home' : $page;
 
-echo view('templates/header.php', ['title' => ucfirst($page)]);
+echo view('templates/header', ['title' => ucfirst($page)]);
 echo view($url);
-echo view('templates/footer.php');
+echo view('templates/footer');
 
 ?>
