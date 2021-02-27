@@ -1101,7 +1101,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #47cf73;
   text-decoration: none;
 }
 a:hover,
@@ -2497,9 +2497,9 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 35px;
   line-height: inherit;
-  color: #333;
+  color: #47cf73;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -2519,6 +2519,8 @@ input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   line-height: normal;
+  width:1em;
+  height:1em;
 }
 input[type="file"] {
   display: block;
@@ -3940,7 +3942,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555;
+  color: #47cf73;
   cursor: default;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -4003,7 +4005,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #5cb85c;
 }
 .nav-stacked > li {
   float: none;
@@ -4017,6 +4019,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-justified > li {
   float: none;
+  font-size: xx-large;
 }
 .nav-justified > li > a {
   margin-bottom: 5px;

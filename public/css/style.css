@@ -39,6 +39,7 @@ input[type="submit"],input[type="reset"],input[type="search"],input[type="text"]
 }
 .w3layouts_header_right{
 	float:left;
+	margin-top:9px;
 }
 .header {
     padding: 0.6em 3em;
@@ -699,6 +700,11 @@ background: rgba(0, 0, 0, 0.17);
     font-weight:700;
     text-align: center;
 }
+
+.thank_you_message{
+	margin: 5em 0 5em 0;
+}
+
 h3.w3l_header.w3_agileits_header.two {
     color: #fff;
 }
@@ -719,7 +725,7 @@ h3.w3l_header.w3_agileits_header.two {
     margin-top: 1em;
 }
 .agile_team_grids_top {
-    margin-top: 3em;
+    margin-top: 1em;
 }
 
 .mission_section, .vision_section{
@@ -1795,7 +1801,7 @@ p.b_label {
 	-webkit-transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
 	transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
 }
-.agileinfo_mail_grid_left textarea{
+/* .agileinfo_mail_grid_left textarea{
 	font-size: 16px;
     color: #212121;
     outline: none;
@@ -1809,7 +1815,7 @@ p.b_label {
     padding: 1em .3em;
     font-weight: 600;
 	font-family: 'Source Sans Pro', sans-serif;
-}
+} */
 .agileinfo_mail_grid_left textarea::-webkit-input-placeholder{
 	color:#666!important;
 }
@@ -1828,6 +1834,44 @@ p.b_label {
 .agileinfo_mail_grid_left input[type="submit"]:hover{
 	background:#47cf73;
 }
+
+/* .cricket_form_submit{ */
+.coaching_form_button{
+	font-size:1.1em;
+	color:#fff;
+	outline:none;
+	width:100%;
+	background: #09347a;
+	border:none;
+	padding:.7em 0;
+	text-transform:uppercase;
+	font-weight:600;
+	letter-spacing:1px;
+	-webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -ms-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition:0.5s ease-in;
+}
+/* .cricket_form_submit:hover{ */
+.coaching_form_button:hover{
+	background:#47cf73;
+}
+.agileinfo_mail_grid_left p, ol{
+	margin: 20px 0 20px 0;
+	font-weight: bold;
+}
+
+.agileinfo_mail_grid_left .checkbox label{
+	margin: 20px 0 20px 0;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.agileinfo_mail_grid_left .checkbox label > span{
+	margin-left:18px;
+}
+
 .agileinfo_mail_social_rightl,.agileinfo_mail_social_rightr{
 	width: 48.52%;
 	text-align:center;

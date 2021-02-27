@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\ContactModel;
+use App\Models\AcademyStudentsModel;
 
 class Home extends BaseController {	
 
@@ -28,6 +29,33 @@ class Home extends BaseController {
 
 		if($contactModel->saveContact($data)){
 			echo "Contact saved successfuly!!!";
+		}
+	}
+
+	public function studentRegistration($coachingType){
+		$academyStudentsModel = new AcademyStudentsModel();		
+
+		$data = [
+			'name' => $this->request->getPost('name'),
+			'phonenumber' => $this->request->getPost('phone_no'),
+			'email' => $this->request->getPost('email'),
+			'school' => ($coachingType != "body_fitness") ? $this->request->getPost('school') : "",
+			'age' => $this->request->getPost('age'),
+			'date_of_birth' => $this->request->getPost('dob'),
+			'gender' => $this->request->getPost('gender'),
+			'height' => $this->request->getPost('height'),
+			'weight' => $this->request->getPost('weight'),
+			'blood_group' => $this->request->getPost('blood_group'),
+			'parents_name' => ($coachingType != "body_fitness") ? $this->request->getPost('parents_name') : "",
+			'referred_by' => $this->request->getPost('referred_by'),
+			'address' => $this->request->getPost('address'),
+			'coaching_type' => $coachingType,
+			'created_at' => date("d-m-Y H:i:sa"),
+			'updated_at' => date("d-m-Y H:i:sa"),
+		];
+
+		if($academyStudentsModel->saveStudent($data)){
+			return redirect()->to(base_url('thankyou'));
 		}
 	}
 }

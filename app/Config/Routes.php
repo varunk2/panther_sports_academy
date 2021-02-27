@@ -35,11 +35,14 @@ $routes->setAutoRoute(true);
 
 $routes->get('/', 'Home::index');
 $routes->get('admin', 'Admin::index');
-// $routes->get('admin/(:segment)', 'Admin::view/$1');
 $routes->get('admin/contactqueries/', 'Admin::contactQueriesList');
 $routes->get('admin/contactquery/(:num)', 'Admin::contactQuery/$1');
 $routes->get('admin/deletecontact/(:num)', 'Admin::deleteContactQuery/$1');
+$routes->get('admin/cricketlist', 'Admin::cricketList');
+$routes->get('admin/footballlist', 'Admin::footballList');
+$routes->get('admin/bodyfitnesslist', 'Admin::bodyFitnessList');
 $routes->get('(:any)', 'Home::view/$1');
+$routes->post('studentregistration/(:any)', 'Home::studentRegistration/$1');
 
 /*
  * --------------------------------------------------------------------

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title><?= $page . " | Panther Sports Academy" ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -79,6 +79,25 @@
             <a href="<?= base_url('admin/contactqueries')?>" class="nav-link <?= ($page == 'contactqueries') ? 'active' : '' ?>">
               <i class="fas fa-user-plus nav-icon"></i>
               <p>Contact Queries</p>
+            </a>
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="<?= base_url('admin/cricketlist')?>" class="nav-link <?= ($page == 'cricketlist') ? 'active' : '' ?>">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Cricket</p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="<?= base_url('admin/footballlist')?>" class="nav-link <?= ($page == 'footballlist') ? 'active' : '' ?>">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Football</p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="<?= base_url('admin/bodyfitnesslist')?>" class="nav-link <?= ($page == 'bodyfitnesslist') ? 'active' : '' ?>">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Body Fitness</p>
             </a>
           </li>
           <li class="nav-item">

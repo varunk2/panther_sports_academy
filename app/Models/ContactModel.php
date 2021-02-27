@@ -17,6 +17,11 @@ class ContactModel extends Model {
         return $this->findAll();
     }
     
+    public function getContactCount(){
+        return count($this->findAll());
+        
+    }
+    
     public function getContactByID($id){
         return $this->find($id);
     }

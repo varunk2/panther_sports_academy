@@ -10,6 +10,15 @@
 
         <h3 class="w3l_header w3_agileits_header">Contact <span>Us</span></h3>
         <p class="sub_para_agile">Add Some Short Description</p>
+        
+        <br><br>
+        
+        <!-- Message Alert -->
+        <div class="alert alert-success alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Success!</strong> Indicates a successful or positive action.
+        </div>
+        <!-- ./Message Alert -->
 
         <div class="agile_team_grids_top">
             <div class="col-md-6 agileinfo_mail_grid_left">
@@ -61,7 +70,21 @@
                 </form>
 
             </div>
+
             <div class="col-md-6 agileinfo_mail_grid_right">
+                <div class="agileinfo_mail_social_right">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <i class="fas fa-address-card"></i>
+                        </div>
+                        <div class="col-md-10">
+                            <p>Sonepat, Haryana</p>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class="clearfix"> </div>
+                    
                 <div class="agileinfo_mail_social_right">
                     <div class="agileinfo_mail_social_rightl">
                         <a href="#" class="w3_contact_facebook">
@@ -77,31 +100,8 @@
                     </div>
                     <div class="clearfix"> </div>
                 </div>
-                <div class="agileinfo_mail_social_right">
-                    <div class="agileinfo_mail_social_rightl">
-                        <a href="#" class="w3_contact_google">
-                            <i class="fa fa-google-plus" aria-hidden="true"></i>
-                            <p>Google+</p>
-                        </a>
-                    </div>
-                    <div class="agileinfo_mail_social_rightr">
-                        <a href="#" class="w3_contact_instagram">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <p>Instagram</p>
-                        </a>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="agileinfo_mail_social_right">
-                    <div class="agileinfo_mail_social_right_social">
-                        <a href="#" class="w3_contact_rss">
-                            <i class="fa fa-rss"></i>
-                            <p>RSS</p>
-                        </a>
-                    </div>
-                </div>
+                <div class="clearfix"> </div>
             </div>
-            <div class="clearfix"> </div>
         </div>
     </div>
 </div>

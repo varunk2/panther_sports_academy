@@ -25,8 +25,8 @@
 		<!-- gallery -->
 		<link href="<?= base_url('css/lsb.css') ?>" rel="stylesheet" type="text/css">
 		<!-- //gallery -->
-		<!-- font-awesome-icons -->
-		<link href="<?= base_url('css/font-awesome.css') ?>" rel="stylesheet"> 
+        <!-- Bootstrap Datepicker -->
+        <link href="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css" rel="stylesheet">
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,900" rel="stylesheet">
 
 	</head>	
@@ -40,6 +40,14 @@
                     <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
                 </ul>
             </div>
+
+            <div class="w3layouts_header_left">
+                <ul>
+                    <li>
+                        <a href="<?= base_url('registration') ?>" class="btn btn-success" role="button">Register</a>
+                    </li>
+                </ul>
+            </div>
             <div class="clearfix"></div>
         </div>
         <div class="banner">
@@ -51,7 +59,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <h1><a class="navbar-brand" href="index.html">Panther Sports Academy</a></h1>
+                        <h1><a class="navbar-brand" href="<?= base_url() ?>">Panther Sports Academy</a></h1>
                     </div>
                     <div class="collapse navbar-collapse m-top-1" id="myNavbar">
                         <nav class="link-effect-2" id="link-effect-2">

@@ -1,4 +1,4 @@
-        <?php if(uri_string() != 'contact'): ?>
+		<?php if((uri_string() != 'contact') && (uri_string() != 'thankyou')): ?>
 
 		<!-- testimonials -->
         <div class="testimonials">
@@ -108,11 +108,16 @@
 		<script type="text/javascript" src="<?= base_url('js/jquery-2.1.4.min.js') ?>"></script>
 		<!-- //js -->
 
+		<script type="text/javascript" src="<?= base_url("js/mainScript.js") ?>"></script>
+
+		<!-- Font Awsome -->
+		<script src="https://kit.fontawesome.com/debf87daa5.js" crossorigin="anonymous"></script>
+
 		<script src="<?= base_url('js/rgbSlide.min.js') ?>"></script>
 		<script>
 			$("#exampleSlider").rgbslide();
 		</script>
-		<!-- <script src="js/mainScript.js"></script> -->
+		<script src="<?= base_url('js/mainScript.js') ?>"></script>
 		<!-- carousal -->
 		<script src="<?= base_url('js/slick.js') ?>" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
@@ -210,16 +215,32 @@
 			});
 		</script>
 		<!-- start-smooth-scrolling -->
-		<!-- for bootstrap working -->
-		<script src="<?= base_url('js/bootstrap.js') ?>"></script>
-		<!-- //for bootstrap working -->
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
 		<!-- here stars scrolling icon -->
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$().UItoTop({ easingType: 'easeOutQuart' });
 			});
 		</script>
-	<!-- //here ends scrolling icon -->
+		<!-- //here ends scrolling icon -->
+
+		<script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+		<script type="text/javascript">
+			$("#c_dob").datepicker({
+				format: 'dd-mm-yyyy'
+			});
+			
+			$("#f_dob").datepicker({
+				format: 'dd-mm-yyyy'
+			});
+
+			$("#b_dob").datepicker({
+				format: 'dd-mm-yyyy'
+			});
+		</script>
 	</body>
 
 </html>

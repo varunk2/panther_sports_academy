@@ -3,11 +3,23 @@
 namespace App\Controllers;
 
 use App\Models\ContactModel;
+use App\Models\AcademyStudentsModel;
 
 class Admin extends BaseController {
 
 	public function index() {
-		return view('admin/index');
+		$contactModel = new ContactModel();
+		$academyStudentsModel = new AcademyStudentsModel();
+		
+		return view(
+			'admin/index',
+			[
+				'contactQueries' => $contactModel->getContactCount(),
+				'cricketMembersCount' => $academyStudentsModel->getCricketCount(),
+				'footballMembersCount' => $academyStudentsModel->getFootballCount(),
+				'bodyFitnessMembersCount' => $academyStudentsModel->getBodyFitnessCount(),
+			]
+		);
 	}
 	
 	public function view($page){
@@ -55,4 +67,42 @@ class Admin extends BaseController {
 
 		return view('admin/index', $data);
 	}
+
+	public function cricketList(){
+		$academyStudentsModel = new AcademyStudentsModel();
+
+		$data = [
+			'page' => 'cricketlist',
+			'queries' => $academyStudentsModel->getCricketStudentsList(),
+		];
+		
+		return view('admin/index', $data);
+	}
+	
+	public function footballList(){
+		$academyStudentsModel = new AcademyStudentsModel();
+
+		$data = [
+			'page' => 'footballlist',
+			'queries' => $academyStudentsModel->getFootballStudentsList(),
+		];
+		
+		return view('admin/index', $data);
+	}
+	
+	public function bodyFitnessList(){
+		$academyStudentsModel = new AcademyStudentsModel();
+
+		$data = [
+			'page' => 'bodyfitnesslist',
+			'queries' => $academyStudentsModel->getFootballStudentsList(),
+		];
+
+		// echo "<pre>";
+		// print_r($data);
+		// echo "</pre>";die;
+		
+		return view('admin/index', $data);
+	}
+
 }
