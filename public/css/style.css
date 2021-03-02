@@ -565,13 +565,21 @@ background: rgba(0, 0, 0, 0.17);
     background: #000;
     min-height: 399px;
 }
+.w3ls-special-img.text_info h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-top:4em;
+}
 .w3ls-special-img.text_info h4 {
     text-align: center;
     color: #fff;
     font-size: 2.5em;
     font-weight: 700;
     text-transform: uppercase;
-    padding-top:4em;
+    padding-top:2em;
 }
 /*--//Effect 1--*/
 /*--flexisel--*/
@@ -1452,20 +1460,35 @@ p.b_label {
     text-align: center;
     padding: 3em 0;
 }
+.stats-bottom-banner h1{
+    text-align: center;
+    font-size: 3.5em;
+    color: #fff;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    padding-bottom: 0.5em;
+    position: relative;
+    font-weight: bolder;
+    margin-top: 1em;
+    letter-spacing: 1px;
+}
+.stats-bottom-banner h1 span{
+	color:#47cf73;
+}
 .stats-bottom-banner h3{
     text-align: center;
     font-size: 2.5em;
     color: #fff;
     line-height: 1.5em;
     text-transform: uppercase;
-    padding-bottom: 0.5em;
+    /* padding-bottom: 0.5em; */
     position: relative;
     font-weight: 700;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     letter-spacing: 1px;
 }
 .stats-bottom-banner h3 span{
-	 color:#47cf73;
+	color:#47cf73;
 }
 .stats-bottom-banner h3:after{
 	content: '';
@@ -1801,7 +1824,7 @@ p.b_label {
 	-webkit-transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
 	transform: translate3d(0, -3.3em, 0) scale3d(0.81, 0.81, 1);
 }
-/* .agileinfo_mail_grid_left textarea{
+.agileinfo_mail_grid_left #contact_message{
 	font-size: 16px;
     color: #212121;
     outline: none;
@@ -1815,7 +1838,7 @@ p.b_label {
     padding: 1em .3em;
     font-weight: 600;
 	font-family: 'Source Sans Pro', sans-serif;
-} */
+}
 .agileinfo_mail_grid_left textarea::-webkit-input-placeholder{
 	color:#666!important;
 }
@@ -1835,7 +1858,6 @@ p.b_label {
 	background:#47cf73;
 }
 
-/* .cricket_form_submit{ */
 .coaching_form_button{
 	font-size:1.1em;
 	color:#fff;
@@ -1881,6 +1903,23 @@ p.b_label {
 	display:block;
 	text-decoration:none;
 }
+
+.info_section{
+	margin: 1em 0 3em 1em;
+	border-left: 5px solid #47cf73;
+}
+
+.info_section .icons_section{    
+    padding: 20px 25px 20px 25px;
+}
+.info_section .icons_section i{
+	font-size: xx-large;
+}
+.info_section .info_content_section{
+	font-size: 1.5em;
+	margin-top:0.7em;
+}
+
 .agileinfo_mail_social_rightl{
 	float:left;
 }

@@ -13,17 +13,19 @@
         
         <br><br>
         
+        <?php if(!empty($message)): ?>
         <!-- Message Alert -->
         <div class="alert alert-success alert-dismissible">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <strong>Success!</strong> Indicates a successful or positive action.
+            <strong><?= $message ?></strong>
         </div>
         <!-- ./Message Alert -->
+        <?php endif; ?>
 
         <div class="agile_team_grids_top">
             <div class="col-md-6 agileinfo_mail_grid_left">
 
-                <form action="/home/contact" method="post">
+                <form action="<?= base_url('/home/contact') ?>" method="post">
                     <?= csrf_field() ?>
 
                     <!-- Name -->
@@ -63,7 +65,7 @@
                     <!-- ./Subject -->
 
                     <!-- Message -->
-                    <textarea name="message" placeholder="Message..." required=""></textarea>
+                    <textarea name="message" placeholder="Message..." id="contact_message"></textarea>
                     <input type="submit" value="Send">
                     <!-- ./Message -->
 
@@ -71,23 +73,49 @@
 
             </div>
 
+            <!-- Info Section -->
             <div class="col-md-6 agileinfo_mail_grid_right">
                 <div class="agileinfo_mail_social_right">
-                    <div class="row">
-                        <div class="col-md-2">
+
+                    <!-- Address -->
+                    <div class="row info_section">
+                        <div class="col-md-2 icons_section">
                             <i class="fas fa-address-card"></i>
                         </div>
-                        <div class="col-md-10">
-                            <p>Sonepat, Haryana</p>
+                        <div class="col-md-10 info_content_section">
+                            <p>Behind Village Badhkhalsa, Near Ansal's Sunshine County, Sector-62, Rai, Sonepat, Haryana</p>
                         </div>
                     </div>
+                    <!-- ./Address -->
+
+                    <!-- Phone number -->
+                    <div class="row info_section">
+                        <div class="col-md-2 icons_section">
+                            <i class="fas fa-phone-square"></i>
+                        </div>
+                        <div class="col-md-10 info_content_section">
+                            <p>Vishesh Dahiya: 7027027902, Praveen Dahiya: 9050790607</p>
+                        </div>
+                    </div>
+                    <!-- ./Phone number -->
+                    
+                    <!-- Email -->
+                    <div class="row info_section">
+                        <div class="col-md-2 icons_section">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="col-md-10 info_content_section">
+                            <p>panthersportsacademytdi@gmail.com</p>
+                        </div>
+                    </div>
+                    <!-- ./Email -->
                 </div>
                         
                 <div class="clearfix"> </div>
                     
                 <div class="agileinfo_mail_social_right">
                     <div class="agileinfo_mail_social_rightl">
-                        <a href="#" class="w3_contact_facebook">
+                        <a href="https://www.facebook.com/panthersportsacademytdi" class="w3_contact_facebook">
                             <i class="fa fa-facebook" aria-hidden="true"></i>
                             <p>Facebook</p>
                         </a>
@@ -102,6 +130,7 @@
                 </div>
                 <div class="clearfix"> </div>
             </div>
+            <!-- ./Info Section -->
         </div>
     </div>
 </div>

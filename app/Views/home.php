@@ -79,8 +79,22 @@
 </div>
 <!-- //banner-bottom -->
 
+<!-- motto-banner -->
+<div class="stats-bottom-banner">
+    <div class="container">
+        <h3><span>O</span>ur <span>M</span>otto</h3>
+        <h1><span>Unleashing the talent,</span> shaping the future.</h1>
+    </div>
+</div>
+<!-- //motto-banner -->
+
 <!-- middle -->
-<div class="middle-w3l">
+<!-- <div class="middle-w3l">
+    <div class="col-md-12 w3ls-special-img text_info">
+        <h4>Our Motto</h4>
+
+        <h1>Unleashing the talent, shaping the future.</h1>
+    </div>
     <div class="col-md-6 w3ls-special-img text_info">
         <h4></h4>
     </div>
@@ -88,7 +102,7 @@
         <h4>Tennis Tips</h4>
     </div>
     <div class="clearfix"> </div>
-</div>
+</div> -->
 <!-- //middle -->
 
 <!-- gallery -->

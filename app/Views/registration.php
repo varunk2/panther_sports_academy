@@ -153,7 +153,7 @@
                                 <!-- Address -->
                                 <div class="form-group">
                                     <label for="c_address">Address <span class="text-danger">*</span></label>
-                                    <textarea name="address" class="form-control" id="c_address" placeholder="Address *"></textarea>
+                                    <textarea name="address" class="form-control" id="c_address"></textarea>
                                 </div>
 
                                 <p>The information given above is correct to the best of my knowledge and if found wrong or misleading the application can be disqualified and the fees forfeited at once.</p>
