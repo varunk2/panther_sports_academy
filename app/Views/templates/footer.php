@@ -99,7 +99,7 @@
 		</div>
 		<div class="wthree_copy_right">
 			<div class="container">
-				<p>© 2020 Panther Sports Academy. All rights reserved | Design by <a href="http://varunsharmak2.online/">Varun Sharma</a></p>
+				<p>© 2020 Panther Sports Academy. All rights reserved | Designed &amp; developed by <a href="http://varunsharmak2.online/">Varun Sharma</a></p>
 			</div>
 		</div>
 		<!-- //footer -->

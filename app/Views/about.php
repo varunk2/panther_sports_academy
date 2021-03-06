@@ -44,7 +44,7 @@
                     </p>
                     <p>
                         We help in building self-confidence and discipline by working as a team.
-                        We provide a wide range of exercises and recreational activities t0 all participants irrespective of their age.
+                        We provide a wide range of exercises and recreational activities to all participants irrespective of their age.
                     </p>
                     <p>
                         We aim to develop sporty culture and healthy lifestyle for all.
@@ -126,8 +126,7 @@
                             Football <span>(Age: 5 - 16)</span>
                         </h3>
                         <p>
-                            Pellentesque convallis diam consequat magna vulputate malesuada. 
-                            Cras a ornare elit. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac.
+                            SSGs(small sided games), fun warmup drills, strength & conditioning exercises weekly.
                         </p>
                     </div>
                     <div class="w3ls_courses_left_grid">
@@ -136,8 +135,7 @@
                             Cricket <span>(Age: 7 - 16)</span>
                         </h3>
                         <p>
-                            Pellentesque convallis diam consequat magna vulputate malesuada. 
-                            Cras a ornare elit. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac.
+                            Matches, weekly matches, monthly marathon, bowling machine, practice on grassy wicket.
                         </p>
                     </div>
                     <div class="w3ls_courses_left_grid">
@@ -146,8 +144,7 @@
                             Body Fitness <span>(All Age Groups)</span>
                         </h3>
                         <p>
-                            Pellentesque convallis diam consequat magna vulputate malesuada. 
-                            Cras a ornare elit. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac.
+                            HIIT, Crossfit, Yoga, AMRAP, cardio, marathons, calisthenics, weight training, circuit training, EMOM.
                         </p>
                     </div>
                 </div>
@@ -200,7 +197,7 @@
                         </li>
                         <li>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                            Balling machine
+                            Bowling machine
                         </li>
                         <li>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>

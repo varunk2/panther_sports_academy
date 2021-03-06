@@ -105,7 +105,7 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="col-md-10 info_content_section">
-                            <p>panthersportsacademytdi@gmail.com</p>
+                            <p>redpanthersportsacademy@gmail.com</p>
                         </div>
                     </div>
                     <!-- ./Email -->

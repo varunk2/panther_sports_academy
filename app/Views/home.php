@@ -27,7 +27,7 @@
 
                 <br />
 
-                <h3>For our panthers:</h3>
+                <h3>For our Panthers:</h3>
                 <ul class="some_agile_facts">
                     <li>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -83,7 +83,7 @@
 <div class="stats-bottom-banner">
     <div class="container">
         <h3><span>O</span>ur <span>M</span>otto</h3>
-        <h1><span>Unleashing the talent,</span> shaping the future.</h1>
+        <h1><span>Unleashing the talent,</span> shaping the future...</h1>
     </div>
 </div>
 <!-- //motto-banner -->

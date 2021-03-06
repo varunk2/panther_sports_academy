@@ -37,7 +37,7 @@
             <div class="w3layouts_header_right">
                 <ul>
                     <li><i class="fa fa-phone" aria-hidden="true"></i>7027027902</li>
-                    <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">panthersportsacademytdi@gmail.com</a></li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">redpanthersportsacademy@gmail.com</a></li>
                 </ul>
             </div>
 
