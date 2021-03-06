@@ -108,7 +108,7 @@
 <!-- gallery -->
 <div class="gallery">
     <h3 class="w3l_header w3_agileits_header"><span>Gallery</span></h3>
-    <p class="sub_para_agile">Ipsum dolor sit amet consectetur adipisicing elit</p>
+    <p class="sub_para_agile">Some snapshots of our Panthers.</p>
     <div class="agile_team_grids_top">
         <ul id="flexiselDemo1">
             <li>
