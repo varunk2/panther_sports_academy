@@ -51,8 +51,8 @@
                         We provide best infrastructure and help our participants to understand sports ethics and habit of fair play.
                     </p>
                     <blockquote>
-                        <p>“In fitness, there are no shortcuts. It involves immense discipline and hard work.” </p>
-                        <footer>Mahesh Babu</footer>
+                        <p>“You don't play for revenge. You play for respect and pride.” </p>
+                        <footer>Rahul Dravid</footer>
                     </blockquote>
                 </div>
                 <div class="clearfix"> </div>
@@ -126,7 +126,7 @@
                             Football <span>(Age: 5 - 16)</span>
                         </h3>
                         <p>
-                            SSGs(small sided games), fun warmup drills, strength & conditioning exercises weekly.
+                            SSGs(Small Sided Games), fun warmup drills, strength & conditioning exercises weekly.
                         </p>
                     </div>
                     <div class="w3ls_courses_left_grid">
@@ -241,6 +241,15 @@
             </div>
             <!-- ./About Us Section -->
 
+            <div class="row" style="margin-top: 2em;">
+                <div class="col-md-6" style="border-right: 5px solid #47cf73;">
+                    <h2>Morning fitness sessions(All age groups)</h2>
+                </div>
+                <div class="col-md-6">
+                    <h2>Separate female fitness batches</h2>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -250,9 +259,7 @@
     <div class="container">
         <h3>We are Open to <span>All Ages</span> and Abilities</h3>
         <p>
-            Nunc in dolor hendrerit, pellentesque mi ac, accumsan nunc. Vestibulum sapien lacus, 
-            auctor sed ullamcorper id, aliquam molestie dui. Proin faucibus 
-            ullamcorper erat id interdum.
+            We provide body fitness sessions to all age groups according to their comfort level. The trainers are very well trained and make everyone feel at home during the session.
         </p>
     </div>
 </div>
