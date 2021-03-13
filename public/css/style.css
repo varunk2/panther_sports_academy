@@ -57,7 +57,7 @@ input[type="submit"],input[type="reset"],input[type="search"],input[type="text"]
 	padding-right:1em;
 }
 .w3layouts_header_right ul li a{
-		    color: #fff;
+	color: #fff;
 	text-decoration:none;
 }
 .w3layouts_header_right ul li a:hover{
@@ -461,7 +461,6 @@ nav.navbar.navbar-default {
     content: "";
     margin: 8px 0;
 }
-
 .w3ls_banner_bottom_right1 h3:after {
     border-top: 2px solid #47cf73;
     display: block;
@@ -469,7 +468,6 @@ nav.navbar.navbar-default {
     content: "";
     margin: 8px 0;
 }
-
 ul.some_agile_facts li {
     list-style: none;
     margin:15px 0;
@@ -756,7 +754,6 @@ background: #ececec;
 .banner-bottom{
     padding: 5em 0 5em 0;
 }
-
 .gallery{
     padding: 5em 0 0 0;
 }
@@ -813,9 +810,7 @@ background: #ececec;
 .slick-slider
 {
     position: relative;
-
     display: block;
-
     -moz-box-sizing: border-box;
          box-sizing: border-box;
 
@@ -834,10 +829,8 @@ background: #ececec;
 .slick-list
 {
     position: relative;
-
     display: block;
     overflow: hidden;
-
     margin: 0;
     padding: 0;
 }
@@ -2365,6 +2358,7 @@ h2.typoh2{
 	h1, .h1, h2, .h2, h3, .h3 {
 		margin-top: 0px;
 		margin-bottom: 0px;
+		font-weight: bold;
 	}
 	.grid_5 h3, .grid_5 h2, .grid_5 h1, .grid_5 h4, .grid_5 h5, h3.hdg, h3.bars {
 		margin-bottom: .5em;
@@ -2510,8 +2504,8 @@ h2.typoh2{
 	.testimonials,.team, .coaching_section {
 		padding: 4em 0;
 	}
-	.banner-bottom, .gallery {
-		padding: 4em 0 0 0;
+	.banner-bottom{
+		padding: 5em 0 5em 0;
 	}
 	.navbar-right {
 		margin: 1em 0 0 6em;
@@ -2614,7 +2608,7 @@ h2.typoh2{
 		margin: 2em auto 0;
 	}
 	.agile_team_grids_top {
-		margin-top: 2em;
+		margin-top: 3em;
 	}
 	.w3ls-special-img.text_info {
 		min-height: 400px;
@@ -2705,8 +2699,8 @@ h2.typoh2{
 	.testimonials,.team,.coaching_section,.footer_agile_w3ls {
 		padding:3em 0;
 	}
-	.banner-bottom,.gallery {
-		padding:3em 0 0 0;
+	.banner-bottom{
+		padding: 5em 0 5em 0;
 	}
 	.agileits_w3layouts_logo.logo2 h2 a {
       font-size: 1.1em;
@@ -3144,7 +3138,7 @@ h2.typoh2{
 		font-size: 2em;
 	}
 	.agile_team_grids_top {
-		margin-top:1em;
+		margin-top: 3em;
 	}
 	.w3_agile_search {
 		float: right;
@@ -3250,9 +3244,13 @@ h2.typoh2{
 		text-align: center;
 		margin-bottom: 6px;
 	}
+	.w3layouts_header_left ul li {
+		display: inline-block;
+		list-style: none;
+	}
 	.w3layouts_header_left ul li a {
-		padding: 0.5em 0em;
-		font-size: 0.95em;
+		padding: 0.5em 0.5em 0.5em 0.5em;
+		font-size: 1.1em;
 	}
 	.w3_agile_search {
 		float: right;
@@ -3268,11 +3266,14 @@ h2.typoh2{
 		font-size: 15px;
 		padding: 8px 24px;
 	}
-	.testimonials,.team,.coaching_section,.footer_agile_w3ls {
+	.testimonials {
+		padding: 5em 0 5em 0;
+	}
+	.team,.coaching_section,.footer_agile_w3ls {
 		padding:2em 0;
 	}
-	.banner-bottom,.gallery {
-		padding:2em 0 0 0;
+	.banner-bottom{
+		padding: 5em 0 5em 0;
 	}
 	.w3ls-special-text:after {
 		position: absolute;
@@ -3395,7 +3396,7 @@ h2.typoh2{
 		padding: 2em 0;
 	}
 	.stats-bottom-banner h3 {
-		font-size: 1.4em;
+		font-size: 2.3em;
 	}
 	.w3_agileits_services1_grid {
 		width: 63%;
@@ -3406,8 +3407,22 @@ h2.typoh2{
 	.w3l_header,.w3ls_banner_bottom_right1 h2 {
 		font-size: 1.8em;
 	}
+	.w3ls_banner_bottom_right1 h2:after {
+		border-top: 2px solid #47cf73;
+		display: block;
+		width: 81px;
+		content: "";
+		margin: 8px auto 0;
+	}
+	.w3ls_banner_bottom_right1 h3:after {
+		border-top: 2px solid #47cf73;
+		display: block;
+		width: 50px;
+		content: "";
+		margin: 8px auto 0;
+	}	
 	.agile_team_grids_top {
-		margin-top:1em;
+		margin-top: 3em;
 	}
 	.w3l_testimonial_grid_pos {
 		position: absolute;
@@ -3432,8 +3447,13 @@ h2.typoh2{
 	}
 }	
 @media (max-width: 480px){
+	*{
+		text-align: center;
+	}
+
 	.w3ls_banner_bottom_right {
 		width: 78%;
+		margin-left: 3em;
 	}
 	.nav > li > a {
 		font-size: 12px;
@@ -3458,7 +3478,7 @@ h2.typoh2{
 	}
 	.w3l_testimonial_grid {
 		padding:2em 1em 1.5em;
-		margin:3em 0.2em 0;
+		margin:7em 0.2em 0;
 	}
 	.second-effect .mask p {
 		font-size: 1.3em;
@@ -3469,7 +3489,7 @@ h2.typoh2{
 		font-size: 1em;
 	}
 	.w3l_testimonial_grid_pos {
-		top: -19%;
+		top: -63%;
 	}
 	.slick-slide img {
 		width: 35%;

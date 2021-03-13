@@ -116,8 +116,8 @@
 		<script src="<?= base_url('js/rgbSlide.min.js') ?>"></script>
 		<script>
 			$("#exampleSlider").rgbslide();
-		</script>
-		<script src="<?= base_url('js/mainScript.js') ?>"></script>
+		</script>		
+
 		<!-- carousal -->
 		<script src="<?= base_url('js/slick.js') ?>" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
