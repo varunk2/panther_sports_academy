@@ -1392,8 +1392,21 @@ font-size: 2.5em;
 .w3_counter_grid3{
 	background:#ffb900;
 }
+.mission_section .mission_section_image {
+	display: none;
+}
 .w3l_stats_bottom_grid_left img{
 	margin:0 auto;
+}
+.extra_info {
+	margin-top: 2em;
+}
+.extra_info .extra_info_left{
+	border-right: 5px solid #47cf73;
+}
+.extra_info h2 {
+	font-size: 29px;
+	font-weight: bold;
 }
 /*-- //stats --*/
 /*-- stats-bottom --*/
@@ -2711,7 +2724,6 @@ h2.typoh2{
 		height: 315px;
 	}
 }
-
 @media (max-width: 991px){
 	.w3_agile_team_grid_right p {
 		width: 100%;
@@ -3272,6 +3284,9 @@ h2.typoh2{
 	.team,.coaching_section,.footer_agile_w3ls {
 		padding:2em 0;
 	}
+	.footer_agile_w3ls {
+		text-align: center;
+	}
 	.banner-bottom{
 		padding: 5em 0 5em 0;
 	}
@@ -3447,7 +3462,16 @@ h2.typoh2{
 	}
 }	
 @media (max-width: 480px){
-	*{
+	/* *{
+		text-align: center;
+	} */
+
+	.banner-bottom,
+	.gallery,
+	.testimonials,
+	.team,
+	.coaching_section,
+	.choose_us {
 		text-align: center;
 	}
 
@@ -3510,9 +3534,40 @@ h2.typoh2{
 	.stats-bottom-banner p {
 		margin: 2em auto;
 	}
+	.mission_section, .vision_section, .coaching_section, .stats {
+		margin-top: 5em;
+	}
 	.w3l_stats_bottom_grid_left {
-		width: 65%;
+		width: 100%;
+		margin-top: 2em !important;
 	}	
+	.mission_section .w3l_stats_bottom_grid_left {
+		display: none;
+	}
+	.mission_section .mission_section_image {
+		display: block;
+		width: 100%;
+		margin: 4em 0 0 0;
+	}
+	.about_us_section .w3l_stats_bottom_grid_left {
+		width: 100%;
+		margin: 0 !important;
+	}
+	.w3l_stats_bottom_grid_left img{
+		margin: 4em 0 0 0;
+	}
+	.extra_info {
+		width: 100%;
+	}
+	.extra_info h2 {
+		font-size: 29px;
+	}
+	.extra_info .extra_info_left{
+		border-right: none;
+	}
+	.extra_info, .extra_info_left, .extra_info_right{
+		margin: 2em 0 0 0;
+	}
 	.modal-body {
 		padding: 1.5em;
 	}
@@ -3552,6 +3607,16 @@ h2.typoh2{
 	.sub_para_agile {
       font-size: 0.85em;
 	}
+	.team .agile_team_grids_top {
+		margin-top: 0;
+	}
+	.agileinfo_mail_grid_right {
+		padding: 0;
+		margin-top: 3em;
+	}
+	.info_content_section p {
+		font-size: 17px;
+	}
 	.w3_agile_search {
 		float: right;
 		width: 100%;
@@ -3566,7 +3631,10 @@ h2.typoh2{
 		min-height: 132px;
 	}
 	.wthree_banner1_info {
-		padding: 3.5em 0 0;
+		padding: 3.5em 0 3.5em 0;
+	}
+	.wthree_banner1_info h3 {
+		font-size: 2.3em;
 	}
 	.w3ls-special-img.text_info {
 		min-height: 200px;
@@ -3609,9 +3677,9 @@ h2.typoh2{
 		width: 82%;
 	}
 	.w3ls_banner_bottom_left {
-		padding-bottom: 0 !important;
+		/* padding-bottom: 0 !important; */
 		margin: 0em 0 2em 0;
-		padding: 0;
+		/* padding: 0; */
 	}
 }
 @media (max-width: 414px){

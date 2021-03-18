@@ -55,6 +55,9 @@
                         <footer>Rahul Dravid</footer>
                     </blockquote>
                 </div>
+                <div class="col-md-6 mission_section_image">
+                    <img src="images/2.jpg" alt=" " class="img-responsive" />
+                </div>
                 <div class="clearfix"> </div>
             </div>
             <!-- ./Mission Section -->
@@ -241,11 +244,11 @@
             </div>
             <!-- ./About Us Section -->
 
-            <div class="row" style="margin-top: 2em;">
-                <div class="col-md-6" style="border-right: 5px solid #47cf73;">
+            <div class="row extra_info">
+                <div class="col-md-6 extra_info_left">
                     <h2>Morning fitness sessions(All age groups)</h2>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 extra_info_right">
                     <h2>Separate female fitness batches</h2>
                 </div>
             </div>

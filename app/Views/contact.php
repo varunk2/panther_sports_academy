@@ -79,10 +79,10 @@
 
                     <!-- Address -->
                     <div class="row info_section">
-                        <div class="col-md-2 icons_section">
+                        <div class="col-md-2 col-xs-2 icons_section">
                             <i class="fas fa-address-card"></i>
                         </div>
-                        <div class="col-md-10 info_content_section">
+                        <div class="col-md-10 col-xs-10 info_content_section">
                             <p>Behind Village Badhkhalsa, Near Ansal's Sunshine County, Sector-62, Rai, Sonepat, Haryana</p>
                         </div>
                     </div>
@@ -90,10 +90,10 @@
 
                     <!-- Phone number -->
                     <div class="row info_section">
-                        <div class="col-md-2 icons_section">
+                        <div class="col-md-2 col-xs-2 icons_section">
                             <i class="fas fa-phone-square"></i>
                         </div>
-                        <div class="col-md-10 info_content_section">
+                        <div class="col-md-10 col-xs-10 info_content_section">
                             <p>Vishesh Dahiya: 7027027902, Praveen Dahiya: 9050790607</p>
                         </div>
                     </div>
@@ -101,10 +101,10 @@
                     
                     <!-- Email -->
                     <div class="row info_section">
-                        <div class="col-md-2 icons_section">
+                        <div class="col-md-2 col-xs-2 icons_section">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="col-md-10 info_content_section">
+                        <div class="col-md-10 col-xs-10 info_content_section">
                             <p>redpanthersportsacademy@gmail.com</p>
                         </div>
                     </div>

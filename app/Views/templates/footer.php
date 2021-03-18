@@ -122,32 +122,32 @@
 		<script src="<?= base_url('js/slick.js') ?>" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(document).on('ready', function() {
-			$(".center").slick({
-				dots: true,
-				infinite: true,
-				centerMode: true,
-				slidesToShow: 2,
-				slidesToScroll: 2,
-				responsive: [
-					{
-					breakpoint: 768,
-					settings: {
-						arrows: true,
-						centerMode: false,
-						slidesToShow: 2
-					}
-					},
-					{
-					breakpoint: 480,
-					settings: {
-						arrows: true,
-						centerMode: false,
-						centerPadding: '40px',
-						slidesToShow: 1
-					}
-					}
-				]
-			});
+				$(".center").slick({
+					dots: true,
+					infinite: true,
+					centerMode: true,
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					responsive: [
+						{
+						breakpoint: 768,
+						settings: {
+							arrows: true,
+							centerMode: false,
+							slidesToShow: 2
+						}
+						},
+						{
+						breakpoint: 480,
+						settings: {
+							arrows: true,
+							centerMode: false,
+							centerPadding: '40px',
+							slidesToShow: 1
+						}
+						}
+					]
+				});
 			});
 		</script>
 		<!-- //carousal -->
