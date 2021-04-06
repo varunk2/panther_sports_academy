@@ -41,6 +41,9 @@ input[type="submit"],input[type="reset"],input[type="search"],input[type="text"]
 	float:left;
 	margin-top:9px;
 }
+.banner{
+	border-bottom: 6px solid #09347a;
+}
 .header {
     padding: 0.6em 3em;
     background: #09347a;
@@ -3376,6 +3379,15 @@ h2.typoh2{
 	}
 }
 @media (max-width: 568px){
+	.banner-bottom
+	.gallery,
+	.testimonials,
+	.team,
+	.coaching_section,
+	.choose_us {
+		text-align: center;
+	}
+
 	.gallery-top,.agileinfo_gallery_top {
 		padding: 1em;
 	}

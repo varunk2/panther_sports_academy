@@ -1,13 +1,8 @@
 <div id="exampleSlider">
-    <div>
-        <h3>Sports for Healthy Life Time <span>Play like a Champion</span></h3>
-    </div>
-    <div>
-        <h3>Play With Your Instructors <span>Reach Your Goal</span></h3>
-    </div>
-    <div>
-        <h3>Sports for healthy Life Time <span>Play like a Champion</span></h3>
-    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 </div>
 
 <!-- banner-bottom -->	
@@ -57,17 +52,22 @@
                     <ul class="slides">
                         <li>	
                             <div class="agileits_w3layouts_banner_bottom_grid">
-                                <img src="images/1.jpg" alt=" " class="img-responsive" />
+                                <img src="images/page_images/home_5.jpg" alt=" " class="img-responsive" />
                             </div>
                         </li>
                         <li>	
                             <div class="agileits_w3layouts_banner_bottom_grid">
-                                <img src="images/2.jpg" alt=" " class="img-responsive" />
+                                <img src="images/page_images/home_2.jpg" alt=" " class="img-responsive" />
                             </div>
                         </li>
                         <li>	
                             <div class="agileits_w3layouts_banner_bottom_grid">
-                                <img src="images/3.jpg" alt=" " class="img-responsive" />
+                                <img src="images/page_images/home_3.jpg" alt=" " class="img-responsive" />
+                            </div>
+                        </li>
+                        <li>	
+                            <div class="agileits_w3layouts_banner_bottom_grid">
+                                <img src="images/page_images/home_4.jpg" alt=" " class="img-responsive" />
                             </div>
                         </li>
                     </ul>
@@ -113,45 +113,45 @@
         <ul id="flexiselDemo1">
             <li>
                 <div class="wthree_gallery_grid">
-                    <a href="images/g1.jpg" class="lsb-preview" data-lsb-group="header">
+                    <a href="images/page_images/gallery_1.jpg" class="lsb-preview" data-lsb-group="header">
                         <div class="view">
-                            <img src="images/g1.jpg" alt="" class="img-responsive" />
+                            <img src="images/page_images/gallery_1.jpg" alt="" class="img-responsive" />
                         </div>	
                     </a>
                 </div>
             </li>
             <li>
                 <div class="wthree_gallery_grid">
-                    <a href="images/g2.jpg" class="lsb-preview" data-lsb-group="header">
+                    <a href="images/page_images/gallery_2.jpg" class="lsb-preview" data-lsb-group="header">
                         <div class="view">
-                            <img src="images/g2.jpg" alt="" class="img-responsive" />								
+                            <img src="images/page_images/gallery_2.jpg" alt="" class="img-responsive" />								
                         </div>	
                     </a>
                 </div>
             </li>
             <li>
                 <div class="wthree_gallery_grid">
-                    <a href="images/g3.jpg" class="lsb-preview" data-lsb-group="header">
+                    <a href="images/page_images/gallery_3.jpg" class="lsb-preview" data-lsb-group="header">
                         <div class="view">
-                            <img src="images/g3.jpg" alt="" class="img-responsive" />								
+                            <img src="images/page_images/gallery_3.jpg" alt="" class="img-responsive" />								
                         </div>	
                     </a>
                 </div>
             </li>
             <li>
                 <div class="wthree_gallery_grid">
-                    <a href="images/g4.jpg" class="lsb-preview" data-lsb-group="header">
+                    <a href="images/page_images/gallery_6.jpg" class="lsb-preview" data-lsb-group="header">
                         <div class="view">
-                            <img src="images/g4.jpg" alt="" class="img-responsive" />								
+                            <img src="images/page_images/gallery_6.jpg" alt="" class="img-responsive" />								
                         </div>	
                     </a>
                 </div>
             </li>
             <li>
                 <div class="wthree_gallery_grid">
-                    <a href="images/g5.jpg" class="lsb-preview" data-lsb-group="header">
+                    <a href="images/page_images/gallery_5.jpg" class="lsb-preview" data-lsb-group="header">
                         <div class="view">
-                            <img src="images/g5.jpg" alt="" class="img-responsive" />								
+                            <img src="images/page_images/gallery_1.jpg" alt="" class="img-responsive" />
                         </div>	
                     </a>
                 </div>
