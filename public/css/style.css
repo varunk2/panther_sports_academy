@@ -1091,17 +1091,18 @@ background: #ececec;
 .footer_agile_w3ls{
     background: #010713;
 	padding:4em 0;
+	text-align: center;
 }
 .footer_agile_w3ls h3 {
     color: #fff;
     font-size: 22px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-top: 20px;
     letter-spacing: 2px;
     font-weight: 600;
 }
 .footer_agile_w3ls li,.footer_agile_w3ls li a {
-      display: block;
+    display: block;
     color: #6a748a;
     font-size: 1em;
     line-height: 2em;
@@ -1230,7 +1231,7 @@ background: #ececec;
 .wthree_copy_right p{
 	color:#fff;
 	line-height:2em;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
 .wthree_copy_right p a{
     color: #47cf73;
@@ -1410,6 +1411,7 @@ font-size: 2.5em;
 .extra_info h2 {
 	font-size: 29px;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 /*-- //stats --*/
 /*-- stats-bottom --*/
@@ -2148,10 +2150,10 @@ h3.agileits-icons-title {
 	h3.icon-subheading {
 		font-size: 25px;
 	}
-	.row {
+	/* .row {
 		margin-right: 0;
 		margin-left: 0;
-	}
+	} */
 	.icon-box {
 		margin: 0;
 	}
@@ -2896,11 +2898,11 @@ h2.typoh2{
 }
 @media (max-width: 800px){
 	.navbar-right {
-		margin: 0.8em 0 0 6em;
+		margin: 0.8em 0 0 2.4em;
 	}
 	.navbar-brand {
 		height: 40px;
-		font-size: .9em;
+		font-size: .8em;
 		letter-spacing: 0px;
 	}
 	.navbar-nav > li > a {
@@ -3492,7 +3494,7 @@ h2.typoh2{
 		margin-left: 3em;
 	}
 	.nav > li > a {
-		font-size: 12px;
+		font-size: 26px;
 	}
 	.w3layouts_register_right input[type="text"], .w3layouts_register_right input[type="email"] {
 		padding: 10px;

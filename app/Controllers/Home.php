@@ -5,15 +5,33 @@ namespace App\Controllers;
 use App\Controllers\EmailController;
 use App\Models\ContactModel;
 use App\Models\AcademyStudentsModel;
+use App\Models\VisitorsCountModel;
 
 class Home extends BaseController {	
 
 	public function index() {
-		return view('index');
+		$visitorsCountModel = new VisitorsCountModel();
+		$visitorsCountModel->saveIPAddress([
+			'ip_address' => getIPAddress(),
+			'visit_date' => date("d-m-Y H:i:sa"),
+		]);
+		
+		return view('index', [
+			'visitorsCount' => $visitorsCountModel->getVisitorsCount()
+		]);
 	}
 	
 	public function view($page){
-		return view('index', ['page' => $page]);
+		$visitorsCountModel = new VisitorsCountModel();
+		// $visitorsCountModel->saveIPAddress([
+		// 	'ip_address' => getIPAddress(),
+		// 	'visit_date' => date("d-m-Y H:i:sa"),
+		// ]);
+
+		return view('index', [
+			'page'          => $page,
+			'visitorsCount' => $visitorsCountModel->getVisitorsCount(),
+		]);
 	}
 	
 	public function contact(){

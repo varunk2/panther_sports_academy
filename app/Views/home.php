@@ -93,22 +93,22 @@
                     <ul class="slides">
                         <li>	
                             <div class="agileits_w3layouts_banner_bottom_grid">
-                                <img src="images/page_images/home_5.jpg" alt=" " class="img-responsive" />
+                                <img src="images/page_images/home_5.jpg" class="img-responsive" />
                             </div>
                         </li>
                         <li>	
                             <div class="agileits_w3layouts_banner_bottom_grid">
-                                <img src="images/page_images/home_2.jpg" alt=" " class="img-responsive" />
+                                <img src="images/page_images/home_2.jpg" class="img-responsive" />
                             </div>
                         </li>
                         <li>	
                             <div class="agileits_w3layouts_banner_bottom_grid">
-                                <img src="images/page_images/home_3.jpg" alt=" " class="img-responsive" />
+                                <img src="images/page_images/home_3.jpg" class="img-responsive" />
                             </div>
                         </li>
                         <li>	
                             <div class="agileits_w3layouts_banner_bottom_grid">
-                                <img src="images/page_images/home_4.jpg" alt=" " class="img-responsive" />
+                                <img src="images/page_images/home_4.jpg" class="img-responsive" />
                             </div>
                         </li>
                     </ul>

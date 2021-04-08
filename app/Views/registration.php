@@ -40,7 +40,7 @@
                                 <!-- ./Name -->
 
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-sm-12">
                                         <!-- Phone Number -->
                                         <div class="form-group">
                                             <label for="c_phone_no">Phone Number <span class="text-danger">*</span></label>
@@ -49,7 +49,7 @@
                                         <!-- ./Phone Number -->
                                     </div>
 
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-sm-12">
                                         <!-- Email -->
                                         <div class="form-group">
                                             <label for="c_email">Email <span class="text-danger">*</span></label>

@@ -138,7 +138,7 @@
                             Cricket <span>(Age: 7 - 16)</span>
                         </h3>
                         <p>
-                            Matches, weekly matches, monthly marathon, bowling machine, practice on grassy wicket.
+                            Weekly matches, monthly marathon, bowling machine, practice on grassy wicket.
                         </p>
                     </div>
                     <div class="w3ls_courses_left_grid">
