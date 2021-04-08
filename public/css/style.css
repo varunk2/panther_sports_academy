@@ -3406,7 +3406,7 @@ h2.typoh2{
 		font-size: 1.4em;
 	}
 	.navbar-brand {
-		font-size: .85em;
+		font-size: .75em;
 	}
 	.wthree_banner1_info {
 		padding: 4em 0 0;
@@ -3716,10 +3716,10 @@ h2.typoh2{
 		border:80px solid rgba(255, 255, 255, 0.7);
 	}
 	.w3l_testimonial_grid_pos {
-		top: -13%;
+		top: -43%;
 	}
 	.w3l_testimonial_grid {
-		margin: 2.5em 0.2em 0;
+		margin: 7em 0.2em 0;
 	}
 	.footer input[type="email"] {
 		width: 100%;

@@ -88,7 +88,7 @@
 
 				</div>
 				<div class="agileits_w3layouts_logo logo2">
-					<h3>Visitors Count: <?= $visitorsCount ?></h3>
+					<!-- <h3>Visitors Count: <?= $visitorsCount ?></h3> -->
 					<h2><a href="index.html">Panther Sports Academy</a></h2>
 					<div class="agileits-social">
 						<ul>
