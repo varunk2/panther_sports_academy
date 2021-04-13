@@ -14,9 +14,9 @@ class Admin extends BaseController {
 		return view(
 			'admin/index',
 			[
-				'contactQueries' => $contactModel->getContactCount(),
-				'cricketMembersCount' => $academyStudentsModel->getCricketCount(),
-				'footballMembersCount' => $academyStudentsModel->getFootballCount(),
+				'contactQueries'          => $contactModel->getContactCount(),
+				'cricketMembersCount'     => $academyStudentsModel->getCricketCount(),
+				'footballMembersCount'    => $academyStudentsModel->getFootballCount(),
 				'bodyFitnessMembersCount' => $academyStudentsModel->getBodyFitnessCount(),
 			]
 		);
@@ -30,7 +30,7 @@ class Admin extends BaseController {
 		$contactModel = new ContactModel();
 
 		$data = [
-			'page' => 'contactquerieslist',
+			'page'    => 'contactquerieslist',
 			'queries' => $contactModel->getContacts(),
 		];
 		
@@ -41,7 +41,7 @@ class Admin extends BaseController {
 		$contactModel = new ContactModel();
 
 		$data = [
-			'page' => 'contactquery',
+			'page'  => 'contactquery',
 			'query' => $contactModel->getContactByID($id),
 		];
 		
@@ -53,13 +53,13 @@ class Admin extends BaseController {
 
 		if($contactModel->deleteContactByID($id)){
 			$data = [
-				'page' => 'contactquerieslist',
+				'page'    => 'contactquerieslist',
 				'queries' => $contactModel->getContacts(),
 				'message' => "success",
 			];
 		} else {
 			$data = [
-				'page' => 'contactquerieslist',
+				'page'    => 'contactquerieslist',
 				'queries' => $contactModel->getContacts(),
 				'message' => "failure",
 			];
@@ -72,7 +72,7 @@ class Admin extends BaseController {
 		$academyStudentsModel = new AcademyStudentsModel();
 
 		$data = [
-			'page' => 'cricketlist',
+			'page'    => 'cricketlist',
 			'queries' => $academyStudentsModel->getCricketStudentsList(),
 		];
 		
@@ -83,7 +83,7 @@ class Admin extends BaseController {
 		$academyStudentsModel = new AcademyStudentsModel();
 
 		$data = [
-			'page' => 'footballlist',
+			'page'    => 'footballlist',
 			'queries' => $academyStudentsModel->getFootballStudentsList(),
 		];
 		
@@ -94,13 +94,9 @@ class Admin extends BaseController {
 		$academyStudentsModel = new AcademyStudentsModel();
 
 		$data = [
-			'page' => 'bodyfitnesslist',
+			'page'    => 'bodyfitnesslist',
 			'queries' => $academyStudentsModel->getFootballStudentsList(),
-		];
-
-		// echo "<pre>";
-		// print_r($data);
-		// echo "</pre>";die;
+		];		
 		
 		return view('admin/index', $data);
 	}
