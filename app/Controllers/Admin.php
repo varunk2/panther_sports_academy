@@ -14,6 +14,7 @@ class Admin extends BaseController {
 		return view(
 			'admin/index',
 			[
+				'title'                   => 'Dashboard',
 				'contactQueries'          => $contactModel->getContactCount(),
 				'cricketMembersCount'     => $academyStudentsModel->getCricketCount(),
 				'footballMembersCount'    => $academyStudentsModel->getFootballCount(),
@@ -31,8 +32,9 @@ class Admin extends BaseController {
 
 		$data = [
 			'page'    => 'contactquerieslist',
+			'title'   => 'Contact Queries',
 			'queries' => $contactModel->getContacts(),
-		];
+		];		
 		
 		return view('admin/index', $data);
 	}
@@ -42,6 +44,7 @@ class Admin extends BaseController {
 
 		$data = [
 			'page'  => 'contactquery',
+			'title' => 'Contact Query',
 			'query' => $contactModel->getContactByID($id),
 		];
 		
@@ -54,25 +57,28 @@ class Admin extends BaseController {
 		if($contactModel->deleteContactByID($id)){
 			$data = [
 				'page'    => 'contactquerieslist',
+				'title'   => 'Contact Query',
 				'queries' => $contactModel->getContacts(),
 				'message' => "success",
 			];
 		} else {
 			$data = [
 				'page'    => 'contactquerieslist',
+				'title'   => 'Contact Query',
 				'queries' => $contactModel->getContacts(),
 				'message' => "failure",
 			];
 		}
-
+		
 		return view('admin/index', $data);
 	}
-
+	
 	public function cricketList(){
 		$academyStudentsModel = new AcademyStudentsModel();
-
+		
 		$data = [
 			'page'    => 'cricketlist',
+			'title'   => 'Cricket Queries',
 			'queries' => $academyStudentsModel->getCricketStudentsList(),
 		];
 		
@@ -81,9 +87,10 @@ class Admin extends BaseController {
 	
 	public function footballList(){
 		$academyStudentsModel = new AcademyStudentsModel();
-
+		
 		$data = [
 			'page'    => 'footballlist',
+			'title'   => 'Football Queries',
 			'queries' => $academyStudentsModel->getFootballStudentsList(),
 		];
 		
@@ -92,11 +99,29 @@ class Admin extends BaseController {
 	
 	public function bodyFitnessList(){
 		$academyStudentsModel = new AcademyStudentsModel();
-
+		
 		$data = [
 			'page'    => 'bodyfitnesslist',
-			'queries' => $academyStudentsModel->getFootballStudentsList(),
+			'title'   => 'Body Fitness Queries',
+			'queries' => $academyStudentsModel->getBodyFitnessStudentsList(),
 		];		
+		
+		return view('admin/index', $data);
+	}
+
+	public function registrationQuery($id){
+		$academyStudentsModel = new AcademyStudentsModel();
+
+		$data = [
+			'page'  => 'registrationQuery',
+			'title' => 'Registration Query',
+			'query' => $academyStudentsModel->getStudentInfo($id),
+		];
+
+		// echo "<pre>";
+		// print_r($data);
+		// // echo $url;
+		// echo "</pre>";die;
 		
 		return view('admin/index', $data);
 	}

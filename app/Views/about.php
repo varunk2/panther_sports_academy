@@ -67,14 +67,14 @@
                 <div class="col-md-6 w3ls_banner_bottom_right1">
                     <h2>Our Vision</h2>
                     <p>
-                        We aim to develop a mindset that health and sport are a lifestyle and that one of most imp pillars in an individuals structure is having a healthy mind in a healthy body.
+                        We aim to develop a mindset that health and sport are a lifestyle and one of most important pillars in an individual's structure is to have a healthy mind in a healthy body.
                     </p>
                     <p>
-                        We like to ensure that people around us should healthy and fit and new gen should be as qualified as possible to represent our country on big platforms.
+                        We like to ensure that people around us should be healthy and fit and our new generation should be as qualified as possible to represent our country on big platforms.
                     </p>
                     <blockquote class="blockquote-reverse">
-                        <p>“Strength does not come from physical capacity. It comes from an indomitable will.”</p>
-                        <footer>Mahatma Gandhi</footer>
+                        <p>“Keep working, even when no one is watching.”</p>
+                        <footer>Alex Morgan</footer>
                     </blockquote>
                 </div>
                 <div class="col-md-6 w3l_stats_bottom_grid_left">

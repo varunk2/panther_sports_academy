@@ -30,6 +30,10 @@ class AcademyStudentsModel extends Model {
         return $this->save($data);
     }
     
+    public function getStudentInfo($id){
+        return $this->find($id);
+    }
+    
     public function getCricketStudentsList(){
         return $this->where('coaching_type', 'cricket')->findAll();
     }
@@ -43,18 +47,17 @@ class AcademyStudentsModel extends Model {
     }
     
     public function getCricketCount(){
-        $cricketRecords =  $this->where('coaching_type', 'cricket')->findAll();
+        $cricketRecords = $this->where('coaching_type', 'cricket')->findAll();
         return count($cricketRecords);
-    }
-    
+    }    
     
     public function getFootballCount(){
-        $footballRecords =  $this->where('coaching_type', 'football')->findAll();
+        $footballRecords = $this->where('coaching_type', 'football')->findAll();
         return count($footballRecords);
     }
     
     public function getBodyFitnessCount(){
-        $bodyFitnessRecords =  $this->where('coaching_type', 'body_fitness')->findAll();
+        $bodyFitnessRecords = $this->where('coaching_type', 'body_fitness')->findAll();
         return count($bodyFitnessRecords);
     }
 }

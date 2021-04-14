@@ -49,7 +49,7 @@
                         <td>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <a href="<?= base_url('admin/contactquery/'.$query['id']) ?>" type="button" class="btn btn-block btn-success">View</a>
+                                    <a href="<?= base_url('admin/registrationquery/'.$query['id']) ?>" type="button" class="btn btn-block btn-success">View</a>
                                 </div>
                                 <div class="col-md-6">
                                     <a href="<?= base_url('admin/deletecontact/'.$query['id']) ?>" type="button" class="btn btn-block btn-danger">Delete</a>

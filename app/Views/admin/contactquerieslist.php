@@ -54,7 +54,7 @@
                 </thead>
                 <tbody>
                     <?php
-                        foreach($queries as $query):
+                      foreach($queries as $query):
                     ?>
                     <tr>
                         <td><?= $query['name'] ?></td>
