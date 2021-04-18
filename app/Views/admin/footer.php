@@ -1,5 +1,5 @@
 <!-- /.content-wrapper -->
-<footer class="main-footer text-center">
+<footer class="main-footer text-centerin">
     <strong>Copyright &copy; 2021 <a href="<?= base_url() ?>" target="_blank">Panther Sports Academy</a>.</strong>
     All rights reserved.
   </footer>
@@ -34,7 +34,8 @@
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
-<script src="https://adminlte.io/themes/dev/AdminLTE/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/summernote/summernote-bs4.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 <!-- overlayScrollbars -->
 <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
@@ -46,8 +47,8 @@
 <!-- DataTables -->
 <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables/jquery.dataTables.js"></script>
 <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/27.0.0/classic/ckeditor.js"></script>
 
-<?php if($page == "contactqueries"): ?>
 <script>
   window.setTimeout(() => {
     document.querySelector(".alert-success").remove();
@@ -55,17 +56,45 @@
   
   $(function () {
     $("#example1").DataTable();
-    $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
+    $('#summernote').summernote({
+      height: 500
     });
   });
+
+  ClassicEditor
+    .create( document.querySelector( '#editor' ), {
+      
+      toolbar: {
+        items: [
+          'heading',
+          '|',
+          'bold',
+          'italic',
+          'link',
+          'bulletedList',
+          'numberedList',
+          '|',
+          'outdent',
+          'indent',
+          '|',
+          'undo',
+          'redo'
+        ]
+      },
+      language: 'en',
+      licenseKey: '',
+    } )
+    .then( editor => {
+      editor.editing.view.change( writer => { writer.setStyle( 'height', '400px', editor.editing.view.document.getRoot() ); } );
+      window.editor = editor;
+    } )
+    .catch( error => {
+      console.error( 'Oops, something went wrong!' );
+      console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+      console.warn( 'Build id: 5jqe5mxvu8fo-a3158np2os9l' );
+      console.error( error );
+    } );
 </script>
-<?php endif; ?>
 
 </body>
 </html>

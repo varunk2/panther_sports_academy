@@ -41,9 +41,11 @@ $routes->get('admin/deletecontact/(:num)', 'Admin::deleteContactQuery/$1');
 $routes->get('admin/cricketlist', 'Admin::cricketList');
 $routes->get('admin/footballlist', 'Admin::footballList');
 $routes->get('admin/bodyfitnesslist', 'Admin::bodyFitnessList');
+$routes->get('admin/pages/(:alpha)', 'Admin::pages/$1');
+$routes->post('admin/savepagedata/(:alpha)', 'Admin::savePageData/$1');
 $routes->get('admin/registrationquery/(:num)', 'Admin::registrationQuery/$1');
 $routes->get('(:any)', 'Home::view/$1');
-$routes->post('studentregistration/(:any)', 'Home::studentRegistration/$1');
+$routes->post('studentregistration/(:alpha)', 'Home::studentRegistration/$1');
 
 /*
  * --------------------------------------------------------------------

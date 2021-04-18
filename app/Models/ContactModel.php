@@ -5,7 +5,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class ContactModel extends Model {
-    protected $table = 'contact';
+    protected $table = 'contact_queries';
 
     protected $allowedFields = ['name', 'phonenumber', 'email', 'subject', 'message'];
 

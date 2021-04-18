@@ -10,14 +10,15 @@ use App\Models\VisitorsCountModel;
 class Home extends BaseController {	
 
 	public function index() {
-		$visitorsCountModel = new VisitorsCountModel();
-		$visitorsCountModel->saveIPAddress([
-			'ip_address' => getIPAddress(),
-			'visit_date' => date("d-m-Y H:i:sa"),
-		]);
+		// $visitorsCountModel = new VisitorsCountModel();
+		// $visitorsCountModel->saveIPAddress([
+		// 	'ip_address' => getIPAddress(),
+		// 	'visit_date' => date("d-m-Y H:i:sa"),
+		// ]);
 		
 		return view('index', [
-			'visitorsCount' => $visitorsCountModel->getVisitorsCount()
+			// 'visitorsCount' => $visitorsCountModel->getVisitorsCount()
+			'visitorsCount' => 0
 		]);
 	}
 	
