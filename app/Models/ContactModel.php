@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class ContactModel extends Model {
     protected $table = 'contact_queries';
 
-    protected $allowedFields = ['name', 'phonenumber', 'email', 'subject', 'message'];
+    protected $allowedFields = ['name', 'phonenumber', 'email', 'subject', 'message', 'created_at'];
 
     public function saveContact($data){        
         return $this->save($data);

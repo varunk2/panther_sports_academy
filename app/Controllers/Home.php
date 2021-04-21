@@ -6,6 +6,8 @@ use App\Controllers\EmailController;
 use App\Models\ContactModel;
 use App\Models\AcademyStudentsModel;
 use App\Models\VisitorsCountModel;
+use App\Models\ContactPageModel;
+use CodeIgniter\HTTP\IncomingRequest;
 
 class Home extends BaseController {	
 
@@ -24,38 +26,47 @@ class Home extends BaseController {
 	
 	public function view($page){
 		$visitorsCountModel = new VisitorsCountModel();
-		// $visitorsCountModel->saveIPAddress([
-		// 	'ip_address' => getIPAddress(),
-		// 	'visit_date' => date("d-m-Y H:i:sa"),
-		// ]);
 
-		return view('index', [
+		$data = [
 			'page'          => $page,
 			'visitorsCount' => $visitorsCountModel->getVisitorsCount(),
-		]);
+		];
+		
+		if($page == "contact") {
+			$contactPageModel = new ContactPageModel();
+			$data['data'] = $contactPageModel->getData();
+		}
+
+		return view('index', $data);
 	}
 	
 	public function contact(){
 		$contactModel = new ContactModel();
-		$email = new EmailController();
-		
+		$email = new EmailController();		
+		$request = service('request');		
+
+		$jsonData = $request->getJSON(true);
+
+		// array_shift($jsonData);
+
+		// echo "<pre>";
+		// print_r($jsonData);
+		// echo "</pre>";die;
+
 		$data = [
-			'name'        => $this->request->getPost('name'),
-			'phonenumber' => $this->request->getPost('phone_no'),
-			'email'       => $this->request->getPost('email'),
-			'subject'     => $this->request->getPost('subject'),
-			'message'     => $this->request->getPost('message'),
+			'name'        => $jsonData['name'],
+			'phonenumber' => $jsonData['phone_no'],
+			'email'       => $jsonData['email'],
+			'subject'     => $jsonData['subject'],
+			'message'     => $jsonData['message'],
 			'created_at'  => date("d-m-Y H:i:sa"),
 		];
 
 		if($contactModel->saveContact($data)/* && $email->sendContactEmail($data)*/){
-			return view(
-				'index',
-				[
-					'page'    => 'contact',
-					'message' => 'Thank you for contacting us. Someone from our team will contact you shortly.'
-				]
-			);
+			return json_encode([
+				'status'  => 'success',
+				'message' => 'Thank you for contacting us. Someone from our team will contact you shortly.'
+			]);
 		}
 	}
 

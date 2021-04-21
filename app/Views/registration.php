@@ -169,7 +169,7 @@
                                 </ol>
 
                                 <div class="checkbox">
-                                    <label><input type="checkbox" class="cricket_rules_checkbox"><span> I agree to all the rules of Panther Sports Academy.</span></label>
+                                    <label><input type="checkbox" class="cricket_rules_checkbox" onchange="ToggleButtonActivation('cricket')"><span> I agree to all the rules of Panther Sports Academy.</span></label>
                                 </div>
 
                                 <button class="btn btn-lg btn-block disabled cricket_form_submit coaching_form_button">Send</button>
@@ -352,7 +352,7 @@
                                 </ol>
 
                                 <div class="checkbox">
-                                    <label><input type="checkbox" class="football_rules_checkbox"><span> I agree to all the rules of Panther Sports Academy.</span></label>
+                                    <label><input type="checkbox" class="football_rules_checkbox" onchange="ToggleButtonActivation('football')"><span> I agree to all the rules of Panther Sports Academy.</span></label>
                                 </div>
 
                                 <button class="btn btn-lg btn-block disabled football_form_submit coaching_form_button">Send</button>
@@ -511,7 +511,7 @@
                                 </ol>
 
                                 <div class="checkbox">
-                                    <label><input type="checkbox" class="bodyfitness_checkbox_cricket"><span> I agree to all the rules of Panther Sports Academy.</span></label>
+                                    <label><input type="checkbox" class="bodyfitness_rules_checkbox" onchange="ToggleButtonActivation('bodyfitness')"><span> I agree to all the rules of Panther Sports Academy.</span></label>
                                 </div>
 
                                 <button type="submit" class="btn btn-lg btn-block disabled bodyfitness_form_submit coaching_form_button">Send</button>

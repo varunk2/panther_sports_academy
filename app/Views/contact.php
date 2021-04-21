@@ -13,19 +13,13 @@
         
         <br><br>
         
-        <?php if(!empty($message)): ?>
-        <!-- Message Alert -->
-        <div class="alert alert-success alert-dismissible">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <strong><?= $message ?></strong>
-        </div>
-        <!-- ./Message Alert -->
-        <?php endif; ?>
+        
 
         <div class="agile_team_grids_top">
             <div class="col-md-6 agileinfo_mail_grid_left">
 
-                <form action="<?= base_url('/home/contact') ?>" method="post">
+                <!-- <form action="<?= base_url('/home/contact') ?>" method="post"> -->
+                <form action="#" method="post" id="contactForm">
                     <?= csrf_field() ?>
 
                     <!-- Name -->
@@ -66,9 +60,10 @@
 
                     <!-- Message -->
                     <textarea name="message" placeholder="Message..." id="contact_message"></textarea>
-                    <input type="submit" value="Send">
                     <!-- ./Message -->
 
+                    <!-- <input type="submit" value="Send"> -->
+                    <input type="button" value="Send" onclick="sendData()">
                 </form>
 
             </div>
@@ -83,7 +78,8 @@
                             <i class="fas fa-address-card"></i>
                         </div>
                         <div class="col-md-10 col-xs-10 info_content_section">
-                            <p>Behind Village Badhkhalsa, Near Ansal's Sunshine County, Sector-62, Rai, Sonepat, Haryana</p>
+                            <!-- <p>Behind Village Badhkhalsa, Near Ansal's Sunshine County, Sector-62, Rai, Sonepat, Haryana</p> -->
+                            <p><?= $data['address'] ?></p>
                         </div>
                     </div>
                     <!-- ./Address -->
@@ -94,7 +90,8 @@
                             <i class="fas fa-phone-square"></i>
                         </div>
                         <div class="col-md-10 col-xs-10 info_content_section">
-                            <p>Vishesh Dahiya: 7027027902, Praveen Dahiya: 9050790607</p>
+                            <!-- <p>Vishesh Dahiya: 7027027902, Praveen Dahiya: 9050790607</p> -->
+                            <p><?= $data['phone_number'] ?></p>
                         </div>
                     </div>
                     <!-- ./Phone number -->
@@ -105,7 +102,8 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="col-md-10 col-xs-10 info_content_section">
-                            <p>redpanthersportsacademy@gmail.com</p>
+                            <!-- <p>redpanthersportsacademy@gmail.com</p> -->
+                            <p><?= $data['email'] ?></p>
                         </div>
                     </div>
                     <!-- ./Email -->

@@ -23,30 +23,28 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
+                    <!-- <div class="alert alert-success alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Success!</strong> Indicates a successful or positive action.
+                    </div> -->
                     <div class="card card-primary card-outline">
-                        <form action="<?= base_url('admin/savepagedata/' . explode("/", $page)[1]) ?>" method="POST">
+                        <!-- <form action="<?= base_url('admin/savepagedata/' . explode("/", $page)[1]) ?>" method="POST" id="admin_contact_form"> -->
+                        <form action="#" method="POST" id="admin_contact_form">
+                            <input type="hidden" name="id" value="<?= $data['id']; ?>">
                             <input type="hidden" name="page" value="<?= $page; ?>">
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="summernote">Address</label>
-                                    <textarea class="form-control" name="address">
-                                    <?php
-                                        echo (!empty($data['address'])) ? $data['address'] : "";
-                                    ?>
-                                    </textarea>
+                                    <label for="address">Address</label>
+                                    <input class="form-control" name="address" type="text" value="<?= $data['address']; ?>" />                                    
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="summernote">Phone Numbers</label>
-                                    <textarea class="form-control" name="phone_number">
-                                    <?php
-                                        echo (!empty($data['phone_number'])) ? $data['phone_number'] : "";
-                                    ?>
-                                    </textarea>
+                                    <label for="phone_number">Phone Numbers</label>
+                                    <input class="form-control" name="phone_number" type="text" value="<?= $data['phone_number']; ?>" />
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="summernote">Email</label>
+                                    <label for="email">Email</label>
                                     <input class="form-control" name="email" type="email" value="<?= (!empty($data['email'])) ? $data['email'] : ""; ?>" />
                                 </div>
                                 <!-- <div class="form-group">
@@ -73,7 +71,7 @@
                             <!-- /.card-body -->
 
                             <div class="card-footer">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="button" id="admin_contact_form_button" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
                         <!-- <div class="card-body">

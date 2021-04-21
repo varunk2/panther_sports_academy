@@ -21,7 +21,7 @@ ul,label{
 body a:hover{
 	text-decoration:none;
 }
-input[type="submit"],input[type="reset"],input[type="search"],input[type="text"],input[type="email"]{
+input[type="submit"],input[type="button"], [type="reset"],input[type="search"],input[type="text"],input[type="email"]{
 	-webkit-transition: 0.5s ease-in;
     -moz-transition: 0.5s ease-in;
     -ms-transition: 0.5s ease-in;
@@ -1853,7 +1853,7 @@ p.b_label {
 .agileinfo_mail_grid_left textarea::-webkit-input-placeholder{
 	color:#666!important;
 }
-.agileinfo_mail_grid_left input[type="submit"]{
+.agileinfo_mail_grid_left input[type="submit"], input[type="button"]{
 	font-size:1.1em;
 	color:#fff;
 	outline:none;
@@ -1865,7 +1865,7 @@ p.b_label {
 	font-weight:600;
 	letter-spacing:1px;
 }
-.agileinfo_mail_grid_left input[type="submit"]:hover{
+.agileinfo_mail_grid_left input[type="submit"]:hover, input[type="button"]:hover{
 	background:#47cf73;
 }
 

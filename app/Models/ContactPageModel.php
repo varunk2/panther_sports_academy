@@ -9,20 +9,23 @@ class ContactPageModel extends Model {
 
     protected $allowedFields = [
         'address',
-        'phonenumber',
+        'phone_number',
         'email',
+        'created_at',
+        'updated_at'
     ];
 
     public function saveData($data){
         // echo "<pre>";
 		// print_r($data);
-		// echo $page;
 		// echo "</pre>";die;
         return $this->save($data);
     }
 
     public function getData(){
-        return $this->findAll();
+        $result = $this->findAll();
+        $resultCount = count($result);
+        return $result[$resultCount-1];
     }
 }
 

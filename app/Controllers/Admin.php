@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\ContactModel;
 use App\Models\ContactPageModel;
 use App\Models\AcademyStudentsModel;
+use CodeIgniter\HTTP\IncomingRequest;
 
 class Admin extends BaseController {
 
@@ -42,6 +43,11 @@ class Admin extends BaseController {
 				$contactPageModel = new ContactPageModel();
 				$data['title'] = 'Contact Page';
 				$data['data'] = $contactPageModel->getData();
+
+				// echo "<pre>";
+				// print_r($data);
+				// echo "</pre>";die;
+
 				break;
 		}
 		
@@ -49,15 +55,21 @@ class Admin extends BaseController {
 	}
 	
 	public function savePageData($page){
-		$data = $this->request->getPost();
-		array_shift($data);
+		$request = service('request');
+		$data = $request->getJSON(true);
+
+		$pageUri = base_url('admin/' . $data['page']);
+		
+		unset($data['page']);
 		$data['created_at'] = date("d-m-Y H:i:sa");
 		$data['updated_at'] = date("d-m-Y H:i:sa");
+		
 		// echo "<pre>";
-		// print_r($this->request->getPost());
-		// echo $page;
+		// print_r($data);
 		// echo "</pre>";die;
 		
+		// $result = "";
+
 		switch($page){
 			case "home":
 				$data['title'] = 'Home Page';
@@ -65,11 +77,17 @@ class Admin extends BaseController {
 				
 			case "contact":
 				$contactPageModel = new ContactPageModel();
-				$contactPageModel->saveData($data);
-				
-				return redirect()->back();
+				$result = ($contactPageModel->saveData($data)) ? "success" : "failed";				
 				break;
 		}
+
+		return json_encode(
+			array(
+				"result" => $result
+			)
+		);
+
+		// return redirect()->to($pageUri)->with('success', 'message');
 	}
 
 	public function contactQueriesList(){
