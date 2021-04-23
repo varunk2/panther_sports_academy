@@ -2,7 +2,7 @@
 $url = (empty($page)) ? 'home' : $page;
 
 // echo "<pre>";
-// print_r($data);
+// print_r($content);
 // echo "</pre>";die;
 
 echo view('templates/header', ['title' => ucfirst($page)]);

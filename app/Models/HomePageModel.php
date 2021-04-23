@@ -4,13 +4,11 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ContactPageModel extends Model {
-    protected $table = 'contact_page';
+class HomePageModel extends Model {
+    protected $table = 'home_page';
 
     protected $allowedFields = [
-        'address',
-        'phone_number',
-        'email',
+        'content',
         'created_at',
         'updated_at'
     ];

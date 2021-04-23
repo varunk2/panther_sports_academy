@@ -12,9 +12,10 @@
 
         <div class="thank_you_message text-center">
             
-            <h4>Thank you for registering in Panther Sports Academy. </h4><br>
+            <!-- <h4>Thank you for registering in Panther Sports Academy. </h4><br>
             <h4>Your form has been submitted successfully. </h4><br>
-            <h4>For further queries, contact 7027027902.</h4><br>
+            <h4>For further queries, contact 7027027902.</h4><br> -->
+            <?= $content; ?>
             
         </div>
     </div>

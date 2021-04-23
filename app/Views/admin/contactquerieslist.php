@@ -53,9 +53,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                      foreach($queries as $query):
-                    ?>
+                    <?php foreach($queries as $query): ?>
                     <tr>
                         <td><?= $query['name'] ?></td>
                         <td><?= $query['phonenumber'] ?></td>

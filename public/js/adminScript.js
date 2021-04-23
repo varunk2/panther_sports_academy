@@ -1,12 +1,72 @@
-document.querySelector("#admin_contact_form_button").addEventListener("click", () => {
-    const form = document.getElementById("admin_contact_form");
+let formEditor;
+
+ClassicEditor
+.create( document.querySelector( '#editor' ) )
+.then( editor => {
+    editor.editing.view.change( writer => {
+        writer.setStyle( 'height', '400px', editor.editing.view.document.getRoot() ); 
+    });
+    formEditor = editor;
+})
+.catch( error => {
+    console.error( error );
+} );
+
+/**
+ * Function for updating Home page content asynchronously.
+*/
+function sendHomeFormData(){
+    const form = document.querySelector(".admin_home_form");
     const formData = new FormData(form);
 
     var object = {};
     formData.forEach((value, key) => object[key] = value);
+    object['editor_text'] = formEditor.getData();
     var jsonData = JSON.stringify(object);
 
-    fetch("http://localhost:8080/admin/savepagedata/contact", {
+    console.log(jsonData);
+    
+    let url = base_url + "/admin/savepagedata/home";
+    
+    sendPostData(url, jsonData);
+}
+
+/**
+ * Function for updating Thank You page content asynchronously.
+ */
+function sendThankYouFormData(){
+    const form = document.querySelector(".admin_thankyou_form");
+    const formData = new FormData(form);
+    
+    var object = {};
+    formData.forEach((value, key) => object[key] = value);
+    object['editor_text'] = formEditor.getData();
+    var jsonData = JSON.stringify(object);
+    console.log(jsonData);
+
+    let url = base_url + "/admin/savepagedata/thankyou";
+
+    sendPostData(url, jsonData);
+}
+
+/**
+ * Function for updating Contact page content asynchronously.
+*/
+function sendContactFormData(){
+    const form = document.getElementById("admin_contact_form");
+    const formData = new FormData(form);
+    
+    var object = {};
+    formData.forEach((value, key) => object[key] = value);
+    var jsonData = JSON.stringify(object);
+    
+    let url = base_url + "/admin/savepagedata/contact";
+    
+    sendPostData(url, jsonData);
+}
+
+function sendPostData(targetURL, jsonData){
+    fetch(targetURL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -20,11 +80,11 @@ document.querySelector("#admin_contact_form_button").addEventListener("click", (
             
             const target = document.querySelector(".card-outline");
             target.before(parentAlertNode);
-
+    
             removeAlertAfter2Seconds(parentAlertNode);
         }
     });
-});
+}
 
 function createAlertMessageNode(){
     var parentAlertNode = document.createElement('div');

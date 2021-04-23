@@ -29,8 +29,8 @@
 <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables/jquery.dataTables.js"></script>
 <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
 <script src="https://cdn.ckeditor.com/ckeditor5/27.0.0/classic/ckeditor.js"></script>
-<script src="https://adminlte.io/themes/v3/plugins/sweetalert2/sweetalert2.min.js"></script>  
 
+<script>const base_url = "<?= base_url() ?>"; </script>
 <script src="<?= base_url("js/adminScript.js") ?>"></script>
 
 <script>
@@ -39,7 +39,9 @@
   }, 2000);
   
   $(function () {
-    $("#example1").DataTable();
+    $("#example1").DataTable({
+      ordering: false
+    });
   });
 </script>
 

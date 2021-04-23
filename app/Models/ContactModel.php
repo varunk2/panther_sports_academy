@@ -14,12 +14,17 @@ class ContactModel extends Model {
     }
 
     public function getContacts(){
-        return $this->findAll();
+        $records = $this->findAll();
+        $result = array();
+
+        for($i = count($records)-1; $i >= 0; $i--)
+            array_push($result, $records[$i]);
+
+        return $result;
     }
     
     public function getContactCount(){
         return count($this->findAll());
-        
     }
     
     public function getContactByID($id){

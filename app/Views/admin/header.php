@@ -20,7 +20,6 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- DataTables -->
   <link rel="stylesheet" href="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
-  <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
@@ -95,19 +94,19 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="<?= base_url('admin/cricketlist')?>" class="nav-link <?= ($page == 'cricketlist') ? 'active' : '' ?>">
+                  <a href="<?= base_url('admin/registrations/cricket')?>" class="nav-link <?= ($page == 'cricketlist') ? 'active' : '' ?>">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Cricket</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?= base_url('admin/footballlist')?>" class="nav-link <?= ($page == 'footballlist') ? 'active' : '' ?>">
+                  <a href="<?= base_url('admin/registrations/football')?>" class="nav-link <?= ($page == 'footballlist') ? 'active' : '' ?>">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Football</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?= base_url('admin/bodyfitnesslist')?>" class="nav-link <?= ($page == 'bodyfitnesslist') ? 'active' : '' ?>">
+                  <a href="<?= base_url('admin/registrations/body_fitness')?>" class="nav-link <?= ($page == 'bodyfitnesslist') ? 'active' : '' ?>">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Body Fitness</p>
                   </a>
@@ -133,17 +132,17 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="<?= base_url("admin/pages/aboutus") ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>About Us</p>
                   </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Events</p>
                   </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a href="<?= base_url("admin/pages/contact") ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
@@ -151,13 +150,13 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="<?= base_url("admin/pages/contact") ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Registration</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="<?= base_url("admin/pages/thankyou") ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Thank You</p>
                   </a>

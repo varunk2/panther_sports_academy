@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Models\ContactModel;
 use App\Models\ContactPageModel;
+use App\Models\HomePageModel;
+use App\Models\ThankyoupageModel;
 use App\Models\AcademyStudentsModel;
 use CodeIgniter\HTTP\IncomingRequest;
 
@@ -16,9 +18,9 @@ class Admin extends BaseController {
 		$data = [
 			'title'                   => 'Dashboard',
 			'contactQueries'          => $contactModel->getContactCount(),
-			'cricketMembersCount'     => $academyStudentsModel->getCricketCount(),
-			'footballMembersCount'    => $academyStudentsModel->getFootballCount(),
-			'bodyFitnessMembersCount' => $academyStudentsModel->getBodyFitnessCount(),
+			'cricketMembersCount'     => $academyStudentsModel->getRegistrationsCount('cricket'),
+			'footballMembersCount'    => $academyStudentsModel->getRegistrationsCount('football'),
+			'bodyFitnessMembersCount' => $academyStudentsModel->getRegistrationsCount('body_fitness'),
 		];
 		
 		return view('admin/index', $data);
@@ -31,26 +33,32 @@ class Admin extends BaseController {
 	public function pages($page){
 		
 		$data = [
-			'page'  => "pages/" . $page,
+			'page' => "pages/" . $page,
 		];
 
 		switch($page){
 			case "home":
+				$homePageModel = new HomePageModel();
 				$data['title'] = 'Home Page';
+				$data['data'] = $homePageModel->getData();
 				break;
 			
 			case "contact":
 				$contactPageModel = new ContactPageModel();
 				$data['title'] = 'Contact Page';
 				$data['data'] = $contactPageModel->getData();
-
-				// echo "<pre>";
-				// print_r($data);
-				// echo "</pre>";die;
-
+				break;
+				
+			case "thankyou":
+				$thankYouPageModel = new ThankyoupageModel();
+				$data['title'] = 'Thank You Page';
+				$data['data'] = $thankYouPageModel->getData();
 				break;
 		}
 		
+		// echo "<pre>";
+		// print_r($data);
+		// echo "</pre>";die;
 		return view('admin/index', $data);
 	}
 	
@@ -58,26 +66,35 @@ class Admin extends BaseController {
 		$request = service('request');
 		$data = $request->getJSON(true);
 
-		$pageUri = base_url('admin/' . $data['page']);
-		
-		unset($data['page']);
 		$data['created_at'] = date("d-m-Y H:i:sa");
 		$data['updated_at'] = date("d-m-Y H:i:sa");
 		
-		// echo "<pre>";
-		// print_r($data);
-		// echo "</pre>";die;
+		unset($data['page']);		
 		
-		// $result = "";
-
+		
 		switch($page){
 			case "home":
-				$data['title'] = 'Home Page';
+				$data['content'] = $data['editor_text'];
+				unset($data['editor_text']);
+				
+				$homePageModel = new HomePageModel();
+				$result = ($homePageModel->saveData($data)) ? "success" : "failed";
+				
 				break;
 				
 			case "contact":
 				$contactPageModel = new ContactPageModel();
-				$result = ($contactPageModel->saveData($data)) ? "success" : "failed";				
+				$result = ($contactPageModel->saveData($data)) ? "success" : "failed";
+				
+				break;
+					
+			case "thankyou":
+				$data['content'] = $data['editor_text'];
+				unset($data['editor_text']);
+				
+				$thankYouPageModel = new ThankyoupageModel();
+				$result = ($thankYouPageModel->saveData($data)) ? "success" : "failed";
+
 				break;
 		}
 
@@ -86,8 +103,6 @@ class Admin extends BaseController {
 				"result" => $result
 			)
 		);
-
-		// return redirect()->to($pageUri)->with('success', 'message');
 	}
 
 	public function contactQueriesList(){
@@ -98,7 +113,7 @@ class Admin extends BaseController {
 			'title'   => 'Contact Queries',
 			'queries' => $contactModel->getContacts(),
 		];
-		
+
 		return view('admin/index', $data);
 	}
 	
@@ -126,40 +141,35 @@ class Admin extends BaseController {
 		
 		return view('admin/index', $data);
 	}
-	
-	public function cricketList(){
+
+	public function registrations($coachingType){
 		$academyStudentsModel = new AcademyStudentsModel();
-		
-		$data = [
-			'page'    => 'cricketlist',
-			'title'   => 'Cricket Queries',
-			'queries' => $academyStudentsModel->getCricketStudentsList(),
-		];
-		
-		return view('admin/index', $data);
-	}
-	
-	public function footballList(){
-		$academyStudentsModel = new AcademyStudentsModel();
-		
-		$data = [
-			'page'    => 'footballlist',
-			'title'   => 'Football Queries',
-			'queries' => $academyStudentsModel->getFootballStudentsList(),
-		];
-		
-		return view('admin/index', $data);
-	}
-	
-	public function bodyFitnessList(){
-		$academyStudentsModel = new AcademyStudentsModel();
-		
-		$data = [
-			'page'    => 'bodyfitnesslist',
-			'title'   => 'Body Fitness Queries',
-			'queries' => $academyStudentsModel->getBodyFitnessStudentsList(),
-		];		
-		
+
+		switch($coachingType){
+			case "cricket":
+				$data = [
+					'page'    => 'cricketlist',
+					'title'   => 'Cricket Queries',
+				];
+				break;
+				
+			case "football":
+				$data = [
+					'page'    => 'footballlist',
+					'title'   => 'Football Queries',
+				];
+				break;
+			
+			case "body_fitness":
+				$data = [
+					'page'    => 'bodyfitnesslist',
+					'title'   => 'Body Fitness Queries',
+				];
+				break;
+		}
+
+		$data['queries'] = $academyStudentsModel->getRegistrationsList($coachingType);
+
 		return view('admin/index', $data);
 	}
 

@@ -40,20 +40,21 @@
     <div></div>
 </div> -->
 
-<!-- banner-bottom -->	
+<!-- banner-bottom -->
 <div class="banner-bottom">
     <div class="container">
     <!---728x90--->
 
         <div class="col-md-6 w3ls_banner_bottom_left">
             <div class="w3ls_banner_bottom_right1">
-                <h2>What do we do?</h2>
+                <!-- <h2>What do we do?</h2>
                 <p>
                     We specialize in discovering and developing any potential talents in cricket and football. We use the best practices in the field within a suitable training environment concentrating on mind and body.
                 </p>
                 <p>
                     We want to maximize the benefit for each individual to promote importance of sports in the lives of children in order to create a healthy and fit sport society.
-                </p>
+                </p> -->
+                <?= $content ?>
 
                 <br />
 

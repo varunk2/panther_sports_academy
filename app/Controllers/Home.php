@@ -7,21 +7,28 @@ use App\Models\ContactModel;
 use App\Models\AcademyStudentsModel;
 use App\Models\VisitorsCountModel;
 use App\Models\ContactPageModel;
+use App\Models\ThankyoupageModel;
+use App\Models\HomePageModel;
 use CodeIgniter\HTTP\IncomingRequest;
 
 class Home extends BaseController {	
 
 	public function index() {
+		$homePageModel = new HomePageModel();
 		// $visitorsCountModel = new VisitorsCountModel();
 		// $visitorsCountModel->saveIPAddress([
 		// 	'ip_address' => getIPAddress(),
 		// 	'visit_date' => date("d-m-Y H:i:sa"),
 		// ]);
-		
-		return view('index', [
-			// 'visitorsCount' => $visitorsCountModel->getVisitorsCount()
+
+		$visitorsCount = 0;//$visitorsCountModel->getVisitorsCount()
+
+		$data = [
+			'content'       => $homePageModel->getData()['content'],
 			'visitorsCount' => 0
-		]);
+		];		
+		
+		return view('index', $data);
 	}
 	
 	public function view($page){
@@ -31,11 +38,24 @@ class Home extends BaseController {
 			'page'          => $page,
 			'visitorsCount' => $visitorsCountModel->getVisitorsCount(),
 		];
-		
-		if($page == "contact") {
-			$contactPageModel = new ContactPageModel();
-			$data['data'] = $contactPageModel->getData();
+
+		switch($page){
+			case "contact":
+				$contactPageModel = new ContactPageModel();
+				$data['data'] = $contactPageModel->getData();
+
+				break;
+
+			case "thankyou":
+				$thankYouPageModel = new ThankyoupageModel();
+				$data['content'] = $thankYouPageModel->getData()['content'];
+
+				break;
 		}
+
+		// echo "<pre>";
+		// print_r($data);
+		// echo "</pre>";die;
 
 		return view('index', $data);
 	}
@@ -45,13 +65,7 @@ class Home extends BaseController {
 		$email = new EmailController();		
 		$request = service('request');		
 
-		$jsonData = $request->getJSON(true);
-
-		// array_shift($jsonData);
-
-		// echo "<pre>";
-		// print_r($jsonData);
-		// echo "</pre>";die;
+		$jsonData = $request->getJSON(true);		
 
 		$data = [
 			'name'        => $jsonData['name'],

@@ -24,29 +24,19 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card card-primary card-outline">
-                        <form action="#" method="POST" id="admin_contact_form">
-                            <input type="hidden" name="id" value="<?= $data['id']; ?>">
+                        <!-- <form action="<?= base_url('admin/savepagedata/' . explode("/", $page)[1]) ?>" method="POST"> -->
+                        <form action="#" class="admin_thankyou_form" method="POST">
                             <input type="hidden" name="page" value="<?= $page; ?>">
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label for="address">Address</label>
-                                    <input class="form-control" name="address" type="text" value="<?= $data['address']; ?>" />                                    
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="phone_number">Phone Numbers</label>
-                                    <input class="form-control" name="phone_number" type="text" value="<?= $data['phone_number']; ?>" />
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input class="form-control" name="email" type="email" value="<?= (!empty($data['email'])) ? $data['email'] : ""; ?>" />
+                                    <label for="editor">Content</label>
+                                    <textarea name="editor_text" id="editor"><?= $data['content']; ?></textarea>
                                 </div>
                             </div>
                             <!-- /.card-body -->
 
                             <div class="card-footer">
-                                <button type="button" class="btn btn-primary" onclick="sendContactFormData()">Submit</button>
+                                <button type="button" onclick="sendThankYouFormData()" class="btn btn-primary">Submit</button>
                             </div>
                         </form>
                     </div>
